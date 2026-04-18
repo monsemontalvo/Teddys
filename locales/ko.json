@@ -1,9 +1,13 @@
 {
-  "nav": { "pres": "개요", "bears": "곰들", "arena": "아레나", "news": "뉴스", "play": "플레이!" },
+  "nav": { "pres": "개요", "bears": "곰들", "arena": "아레나", "news": "뉴스", "play": "사전 등록" },
   "hero": {
       "title": "별을 모아 아레나를 지배하세요!",
       "subtitle": "가장 거칠고 귀여운 멀티플레이어가 도착했습니다.",
-      "cta": "무료 다운로드"
+      "cta": "지금 사전 등록",
+      "cd_days": "일",
+      "cd_hours": "시간",
+      "cd_mins": "분",
+      "cd_secs": "초"
   },
   "pres": {
       "title": "Teddy's All-Stars 란 무엇인가요?",
@@ -16,23 +20,31 @@
   "osos": {
       "title": "올스타 만나기",
       "3d": "애니메이션 3D 모델 불러오기 (.glb)",
-      "bear1": { "class": "클래스: 스트라이커" },
-      "bear2": { "class": "클래스: 탱크" },
-      "bear3": { "class": "클래스: 서포터" },
-      "bear4": { "class": "클래스: 스피드스터" }
+      "bear1": { "name": "Pancho", "country": "국가: 멕시코" },
+      "bear2": { "name": "Sam", "country": "국가: 미국" },
+      "bear3": { "name": "Kuma", "country": "국가: 일본" },
+      "bear4": { "name": "Maple", "country": "국가: 캐나다" },
+      "bear5": { "name": "Rio", "country": "국가: 브라질" },
+      "bear6": { "name": "Pierre", "country": "국가: 프랑스" },
+      "bear7": { "name": "Che", "country": "국가: 아르헨티나" },
+      "bear8": { "name": "Toro", "country": "국가: 스페인" },
+      "bear9": { "name": "Otto", "country": "국가: 독일" }
   },
   "arena": {
       "title": "가장 미친 아레나",
-      "map1": { "title": "사탕 공장", "desc": "끈적이는 바닥과 거대한 롤리팝을 조심하세요." },
-      "map2": { "title": "사이버펑크 옥상", "desc": "네온 불빛과 거대한 팬 사이 높은 곳에서 플레이하세요." },
+      "map1": { "title": "사탕 공장", "desc": "끈적끈적한 바닥과 거대한 막대 사탕을 조심하세요." },
+      "map2": { "title": "사이버펑크 옥상", "desc": "네온 불빛과 거대한 선풍기 사이 높은 곳에서 플레이하세요." },
       "map3": { "title": "무중력", "desc": "포털과 낮은 중력이 있는 우주 핸드볼." }
   },
   "news": {
       "title": "최신 뉴스",
-      "readmore": "더 읽기",
+      "readmore": "더 읽어보기",
       "tag": { "update": "업데이트", "event": "이벤트", "community": "커뮤니티" },
-      "art1": { "title": "패치 1.2: 여름 스킨", "desc": "수영복으로 곰들을 해변에 갈 준비를 시키세요. 지금 이용 가능!" },
+      "art1": { "title": "패치 1.2: 여름 스킨", "desc": "수영복으로 해변에 갈 곰을 준비하세요. 지금 이용 가능!" },
       "art2": { "title": "커뮤니티 토너먼트: 등록", "desc": "누가 최고의 올스타인지 증명하세요. 독점 상품." },
-      "art3": { "title": "이달의 팬 아트: 우승자", "desc": "우리 플레이어들이 그린 가장 놀라운 그림을 확인하세요." }
+      "art3": { "title": "이달의 팬 아트: 우승자", "desc": "우리 플레이어들이 그린 놀라운 그림을 확인하세요." }
+  },
+  "footer": {
+      "rights": "© 2026 - 모든 권리 보유."
   }
 }

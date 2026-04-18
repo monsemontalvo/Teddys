@@ -1,9 +1,13 @@
 {
-  "nav": { "pres": "Présentation", "bears": "Ours", "arena": "Arène", "news": "Actualités", "play": "Jouer!" },
+  "nav": { "pres": "Présentation", "bears": "Ours", "arena": "Arène", "news": "Actualités", "play": "PRÉ-INSCRIVEZ-VOUS" },
   "hero": {
       "title": "Collectionnez des Étoiles et Dominez l'Arène !",
       "subtitle": "Le multijoueur le plus rude et adorable est arrivé.",
-      "cta": "TÉLÉCHARGER GRATUITEMENT"
+      "cta": "PRÉ-INSCRIVEZ-VOUS",
+      "cd_days": "Jours",
+      "cd_hours": "Heures",
+      "cd_mins": "Min",
+      "cd_secs": "Sec"
   },
   "pres": {
       "title": "Qu'est-ce que Teddy's All-Stars ?",
@@ -16,10 +20,15 @@
   "osos": {
       "title": "RENCONTREZ LES ALL-STARS",
       "3d": "Charger le modèle 3D animé (.glb)",
-      "bear1": { "class": "Classe : Attaquant" },
-      "bear2": { "class": "Classe : Tank" },
-      "bear3": { "class": "Classe : Soutien" },
-      "bear4": { "class": "Classe : Sprinter" }
+      "bear1": { "name": "Pancho", "country": "Pays: Mexique" },
+      "bear2": { "name": "Sam", "country": "Pays: USA" },
+      "bear3": { "name": "Kuma", "country": "Pays: Japon" },
+      "bear4": { "name": "Maple", "country": "Pays: Canada" },
+      "bear5": { "name": "Rio", "country": "Pays: Brésil" },
+      "bear6": { "name": "Pierre", "country": "Pays: France" },
+      "bear7": { "name": "Che", "country": "Pays: Argentine" },
+      "bear8": { "name": "Toro", "country": "Pays: Espagne" },
+      "bear9": { "name": "Otto", "country": "Pays: Allemagne" }
   },
   "arena": {
       "title": "LES ARÈNES LES PLUS FOLLES",
@@ -31,8 +40,11 @@
       "title": "DERNIÈRES NOUVELLES",
       "readmore": "Lire la suite",
       "tag": { "update": "MISE À JOUR", "event": "ÉVÉNEMENT", "community": "COMMUNAUTÉ" },
-      "art1": { "title": "Patch 1.2 : Skins d'Été", "desc": "Préparez vos ours pour la plage avec des maillots de bain. Disponible maintenant !" },
-      "art2": { "title": "Tournoi Communautaire : Inscrivez-vous", "desc": "Prouvez qui est le meilleur All-Star. Des prix exclusifs." },
-      "art3": { "title": "Fan Art du Mois : Gagnants", "desc": "Découvrez les dessins les plus incroyables réalisés par nos joueurs." }
+      "art1": { "title": "Patch 1.2: Skins d'Été", "desc": "Préparez vos ours pour la plage avec des maillots de bain. Disponible maintenant !" },
+      "art2": { "title": "Tournoi Communautaire : Inscrivez-vous", "desc": "Prouvez qui est le meilleur All-Star. Prix exclusifs." },
+      "art3": { "title": "Fan Art du Mois : Gagnants", "desc": "Découvrez les dessins incroyables réalisés par nos joueurs." }
+  },
+  "footer": {
+      "rights": "© 2026 - Tous droits réservés."
   }
 }

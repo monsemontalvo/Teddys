@@ -3,7 +3,11 @@
   "hero": {
       "title": "¡Colecciona Estrellas y Domina la Arena!",
       "subtitle": "El multijugador más rudo y adorable ha llegado.",
-      "cta": "PREREGÍSTRATE AHORA"
+      "cta": "PREREGÍSTRATE AHORA",
+      "cd_days": "Días",
+      "cd_hours": "Horas",
+      "cd_mins": "Min",
+      "cd_secs": "Seg"
   },
   "pres": {
       "title": "¿Qué es Teddy's All-Stars?",
@@ -16,10 +20,15 @@
   "osos": {
       "title": "CONOCE A LOS ALL-STARS",
       "3d": "Cargar Modelo 3D Animado (.glb)",
-      "bear1": { "class": "Clase: Delantero" },
-      "bear2": { "class": "Clase: Tanque" },
-      "bear3": { "class": "Clase: Apoyo" },
-      "bear4": { "class": "Clase: Velocista" }
+      "bear1": { "name": "Pancho", "country": "País: México" },
+      "bear2": { "name": "Sam", "country": "País: Estados Unidos" },
+      "bear3": { "name": "Kuma", "country": "País: Japón" },
+      "bear4": { "name": "Maple", "country": "País: Canadá" },
+      "bear5": { "name": "Rio", "country": "País: Brasil" },
+      "bear6": { "name": "Pierre", "country": "País: Francia" },
+      "bear7": { "name": "Che", "country": "País: Argentina" },
+      "bear8": { "name": "Toro", "country": "País: España" },
+      "bear9": { "name": "Otto", "country": "País: Alemania" }
   },
   "arena": {
       "title": "LAS ARENAS MÁS LOCAS",
@@ -34,5 +43,8 @@
       "art1": { "title": "Parche 1.2: Skins de Verano", "desc": "Prepara a tus osos para la playa con trajes de baño. ¡Ya disponible!" },
       "art2": { "title": "Torneo de Comunidades: Inscríbete", "desc": "Demuestra quién es el mejor All-Star. Premios exclusivos." },
       "art3": { "title": "Fan Art del Mes: Ganadores", "desc": "Mira los dibujos más increíbles hechos por nuestros jugadores." }
+  },
+  "footer": {
+      "rights": "© 2026 - Todos los derechos reservados."
   }
 }

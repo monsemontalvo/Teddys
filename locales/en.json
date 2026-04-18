@@ -1,9 +1,13 @@
 {
-  "nav": { "pres": "Overview", "bears": "Bears", "arena": "Arena", "news": "News", "play": "Play Now!" },
+  "nav": { "pres": "Overview", "bears": "Bears", "arena": "Arena", "news": "News", "play": "PRE-REGISTER NOW" },
   "hero": {
       "title": "Collect Stars and Dominate the Arena!",
       "subtitle": "The roughest and cutest multiplayer has arrived.",
-      "cta": "DOWNLOAD FREE"
+      "cta": "PRE-REGISTER NOW",
+      "cd_days": "Days",
+      "cd_hours": "Hours",
+      "cd_mins": "Min",
+      "cd_secs": "Sec"
   },
   "pres": {
       "title": "What is Teddy's All-Stars?",
@@ -16,10 +20,15 @@
   "osos": {
       "title": "MEET THE ALL-STARS",
       "3d": "Load Animated 3D Model (.glb)",
-      "bear1": { "class": "Class: Striker" },
-      "bear2": { "class": "Class: Tank" },
-      "bear3": { "class": "Class: Support" },
-      "bear4": { "class": "Class: Speedster" }
+      "bear1": { "name": "Pancho", "country": "Country: Mexico" },
+      "bear2": { "name": "Sam", "country": "Country: USA" },
+      "bear3": { "name": "Kuma", "country": "Country: Japan" },
+      "bear4": { "name": "Maple", "country": "Country: Canada" },
+      "bear5": { "name": "Rio", "country": "Country: Brazil" },
+      "bear6": { "name": "Pierre", "country": "Country: France" },
+      "bear7": { "name": "Che", "country": "Country: Argentina" },
+      "bear8": { "name": "Toro", "country": "Country: Spain" },
+      "bear9": { "name": "Otto", "country": "Country: Germany" }
   },
   "arena": {
       "title": "CRAZIEST ARENAS",
@@ -31,8 +40,11 @@
       "title": "LATEST NEWS",
       "readmore": "Read more",
       "tag": { "update": "UPDATE", "event": "EVENT", "community": "COMMUNITY" },
-      "art1": { "title": "Patch 1.2: Summer Skins", "desc": "Get your bears ready for the beach with swimsuits. Out now!" },
+      "art1": { "title": "Patch 1.2: Summer Skins", "desc": "Get your bears ready for the beach with swimsuits. Available now!" },
       "art2": { "title": "Community Tournament: Sign Up", "desc": "Prove who is the best All-Star. Exclusive prizes." },
       "art3": { "title": "Fan Art of the Month: Winners", "desc": "Check out the most incredible drawings by our players." }
+  },
+  "footer": {
+      "rights": "© 2026 - All rights reserved."
   }
 }
