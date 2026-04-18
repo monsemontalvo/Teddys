@@ -1,0 +1,38 @@
+{
+  "nav": { "pres": "Présentation", "bears": "Ours", "arena": "Arène", "news": "Actualités", "play": "Jouer!" },
+  "hero": {
+      "title": "Collectionnez des Étoiles et Dominez l'Arène !",
+      "subtitle": "Le multijoueur le plus rude et adorable est arrivé.",
+      "cta": "TÉLÉCHARGER GRATUITEMENT"
+  },
+  "pres": {
+      "title": "Qu'est-ce que Teddy's All-Stars ?",
+      "feat1": { "title": "Compétences Uniques", "desc": "Chaque ours possède un superpouvoir dévastateur qui change le cours de la bataille." },
+      "feat2": { "title": "Personnalisation Totale", "desc": "Des centaines de skins, d'accessoires et de ballons pour définir votre style." },
+      "feat3": { "title": "Chaos Multijoueur", "desc": "Des matchs compétitifs intenses en 3c3 contre des joueurs du monde entier." },
+      "videos": "GAMEPLAY ET BANDES-ANNONCES",
+      "gallery": "CAPTURES D'ÉCRAN"
+  },
+  "osos": {
+      "title": "RENCONTREZ LES ALL-STARS",
+      "3d": "Charger le modèle 3D animé (.glb)",
+      "bear1": { "class": "Classe : Attaquant" },
+      "bear2": { "class": "Classe : Tank" },
+      "bear3": { "class": "Classe : Soutien" },
+      "bear4": { "class": "Classe : Sprinter" }
+  },
+  "arena": {
+      "title": "LES ARÈNES LES PLUS FOLLES",
+      "map1": { "title": "Usine de Bonbons", "desc": "Attention au sol collant et aux sucettes géantes." },
+      "map2": { "title": "Toit Cyberpunk", "desc": "Jouez en hauteur parmi les lumières néon et les ventilateurs géants." },
+      "map3": { "title": "Gravité Zéro", "desc": "Handball spatial avec des portails et une faible gravité." }
+  },
+  "news": {
+      "title": "DERNIÈRES NOUVELLES",
+      "readmore": "Lire la suite",
+      "tag": { "update": "MISE À JOUR", "event": "ÉVÉNEMENT", "community": "COMMUNAUTÉ" },
+      "art1": { "title": "Patch 1.2 : Skins d'Été", "desc": "Préparez vos ours pour la plage avec des maillots de bain. Disponible maintenant !" },
+      "art2": { "title": "Tournoi Communautaire : Inscrivez-vous", "desc": "Prouvez qui est le meilleur All-Star. Des prix exclusifs." },
+      "art3": { "title": "Fan Art du Mois : Gagnants", "desc": "Découvrez les dessins les plus incroyables réalisés par nos joueurs." }
+  }
+}

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;700;800&display=swap');
+
+/* Regla para scroll suave nativo */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Títulos de sección estilo Cómic */
+.section-title {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: white;
+    text-shadow: 4px 4px 0px #000;
+}
+
+.section-subtitle {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #FFD700; /* Amarillo */
+    text-shadow: 2px 2px 0px #000;
+}
+
+/* Tarjetas Estilo Cartoon */
+.card-cartoon {
+    background-color: #000;
+    border: 6px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+    transition: all 0.3s ease;
+}
+
+.card-cartoon:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0px 0px rgba(0,0,0,1);
+}
+
+.card-cartoon img {
+    border-bottom: 6px solid #000;
+    object-fit: cover;
+}
+
+/* Placeholders para videos (como tu imagen) */
+.video-placeholder {
+    position: relative;
+    border: 4px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px black;
+    transition: transform 0.2s;
+}
+
+.video-placeholder:hover {
+    transform: scale(1.05);
+}
+
+.video-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(50%);
+    transition: filter 0.3s;
+}
+
+.video-placeholder:hover img {
+    filter: grayscale(0%);
+}
+
+.play-icon {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s;
+}
+
+.video-placeholder:hover .play-icon {
+    background-color: rgba(255, 69, 0, 0.6); /* Color Naranja Error */
+}
+
+/* Galería */
+.img-gallery {
+    border: 4px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px black;
+    object-fit: cover;
+}
+
+/* Placeholders 3D de Osos */
+.card-osos {
+    background-color: #000;
+    border: 4px solid black;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px black;
+}
+
+.placeholder-3d {
+    height: 250px;
+    background: radial-gradient(circle, #333 0%, #000 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+    border-bottom: 4px solid black;
+    overflow: hidden;
+}
+
+/* Ajustes responsivos para títulos móviles */
+@media (max-width: 640px) {
+    .section-title { font-size: 2.5rem; }
+}
+
