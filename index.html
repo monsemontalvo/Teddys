@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="es" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teddy's All-Stars - Arena de Campeones</title>
-    
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://unpkg.com/i18next@23.11.1/i18next.min.js"></script>
     <script src="https://unpkg.com/i18next-http-backend@2.5.2/i18nextHttpBackend.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -27,10 +28,13 @@
             }
         }
     </script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
+
 <body class="bg-black text-white m-0 p-0 overflow-x-hidden">
 
-    <div id="loading-screen" class="fixed inset-0 bg-black flex justify-center items-center z-[1000] transition-opacity duration-1000">
+    <div id="loading-screen"
+        class="fixed inset-0 bg-black flex justify-center items-center z-[1000] transition-opacity duration-1000">
         <div class="loader-content flex flex-col items-center gap-8 w-full px-4">
             <div class="dots-loader flex gap-2 sm:gap-4 scale-100 sm:scale-150">
                 <span class="loading loading-spinner loading-md sm:loading-lg text-primary"></span>
@@ -41,46 +45,62 @@
                 <span class="loading loading-spinner loading-md sm:loading-lg text-warning"></span>
                 <span class="loading loading-spinner loading-md sm:loading-lg text-error"></span>
             </div>
-            <img id="loading-logo" src="teddylogo.png" alt="Logo" class="hidden w-144 sm:w-192 md:max-w-[900px] opacity-0 transition-opacity duration-1000 rounded-2xl shadow-2xl">
+            <img id="loading-logo" src="teddylogo.png" alt="Logo"
+                class="hidden w-144 sm:w-192 md:max-w-[900px] opacity-0 transition-opacity duration-1000 rounded-2xl shadow-2xl">
         </div>
     </div>
 
     <div id="main-content" class="hidden opacity-0 transition-opacity duration-1000">
-        
+
         <header class="fixed top-0 left-0 w-full z-[900] bg-black/80 backdrop-blur-md border-b-4 border-black">
             <div class="navbar max-w-7xl mx-auto">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-yellow-400">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
                         </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52 font-bold uppercase border-2 border-black font-sans text-white">
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52 font-bold uppercase border-2 border-black font-sans text-white">
                             <li><a href="#presentacion" data-i18n="nav.pres">Presentación</a></li>
                             <li><a href="#osos" data-i18n="nav.bears">Osos</a></li>
                             <li><a href="#arena" data-i18n="nav.arena">Arena</a></li>
                             <li><a href="#noticias" data-i18n="nav.news">Noticias</a></li>
                         </ul>
                     </div>
-                    <a href="#hero" class="btn btn-ghost text-2xl font-black italic tracking-tighter uppercase text-yellow-400 font-anton shadow-black drop-shadow-md">
+                    <a href="#hero"
+                        class="btn btn-ghost text-2xl font-black italic tracking-tighter uppercase text-yellow-400 font-anton shadow-black drop-shadow-md">
                         TEDDY'S ALL-STARS
                     </a>
                 </div>
 
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 gap-1 font-black uppercase tracking-widest text-white font-sans text-xs">
-                        <li><a href="#presentacion" class="hover:text-yellow-400 transition" data-i18n="nav.pres">Presentación</a></li>
+                    <ul
+                        class="menu menu-horizontal px-1 gap-1 font-black uppercase tracking-widest text-white font-sans text-xs">
+                        <li><a href="#presentacion" class="hover:text-yellow-400 transition"
+                                data-i18n="nav.pres">Presentación</a></li>
                         <li><a href="#osos" class="hover:text-yellow-400 transition" data-i18n="nav.bears">Osos</a></li>
-                        <li><a href="#arena" class="hover:text-yellow-400 transition" data-i18n="nav.arena">Arena</a></li>
-                        <li><a href="#noticias" class="hover:text-yellow-400 transition" data-i18n="nav.news">Noticias</a></li>
+                        <li><a href="#arena" class="hover:text-yellow-400 transition" data-i18n="nav.arena">Arena</a>
+                        </li>
+                        <li><a href="#noticias" class="hover:text-yellow-400 transition"
+                                data-i18n="nav.news">Noticias</a></li>
                     </ul>
                 </div>
 
                 <div class="navbar-end gap-2">
                     <div class="dropdown dropdown-end">
                         <div tabindex="0" role="button" class="btn btn-ghost btn-circle text-yellow-400">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2 2 2 0 012 2v.65M16 4.354V5a2 2 0 002 2h2m-1.6 14c2.863-3.003 3.9-7.85 1.577-12.188M14.5 3C19.552 8.163 19.552 15.837 14.5 21m-9-18C.448 8.163.448 15.837 5.5 21" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2 2 2 0 012 2v.65M16 4.354V5a2 2 0 002 2h2m-1.6 14c2.863-3.003 3.9-7.85 1.577-12.188M14.5 3C19.552 8.163 19.552 15.837 14.5 21m-9-18C.448 8.163.448 15.837 5.5 21" />
+                            </svg>
                         </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-300 rounded-box w-40 font-bold border-2 border-black font-sans text-white">
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-300 rounded-box w-40 font-bold border-2 border-black font-sans text-white">
                             <li><button onclick="changeLanguage('es')">Español 🇲🇽</button></li>
                             <li><button onclick="changeLanguage('en')">English 🇺🇸</button></li>
                             <li><button onclick="changeLanguage('fr')">Français 🇫🇷</button></li>
@@ -89,28 +109,85 @@
                         </ul>
                     </div>
 
-                    <button class="btn btn-warning btn-sm border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-y-1 hover:shadow-none transition-all font-black uppercase text-black">
+                    <button id="music-toggle"
+                        class="btn btn-ghost btn-circle text-yellow-400 hover:scale-110 transition-transform">
+                        <svg id="icon-music-off" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 9.75 19.5 12m0 0 2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6 4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
+                        </svg>
+                        <svg id="icon-music-on" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor" class="h-6 w-6 hidden">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
+                        </svg>
+                    </button>
+
+                    <button
+                        class="btn btn-warning btn-sm border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-y-1 hover:shadow-none transition-all font-black uppercase text-black">
                         <span data-i18n="nav.play">¡Jugar!</span>
                     </button>
                 </div>
             </div>
         </header>
 
-        <section id="hero" class="relative w-full h-[100svh] flex items-center justify-center overflow-hidden pt-16 scroll-mt-16">
+        <section id="hero"
+            class="relative w-full h-[100svh] flex items-center justify-center overflow-hidden pt-16 scroll-mt-16">
             <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
                 <source src="WebPage.mp4" type="video/mp4">
             </video>
             <div class="absolute inset-0 bg-black/50 z-[5]"></div>
+
             <div class="relative z-10 text-center px-4 max-w-5xl mx-auto" data-aos="zoom-in">
-                <h1 class="text-4xl sm:text-6xl md:text-8xl font-black uppercase leading-tight mb-6 text-white font-anton" style="text-shadow: 4px 4px 0px #000;">
+                <h1 class="text-4xl sm:text-6xl md:text-8xl font-black uppercase leading-tight mb-6 text-white font-anton"
+                    style="text-shadow: 4px 4px 0px #000;">
                     <span data-i18n="hero.title">¡Colecciona Estrellas y Domina la Arena!</span>
                 </h1>
-                <p class="text-xl md:text-2xl font-bold bg-black/50 inline-block px-6 py-2 rounded-full border-2 border-white/20 mb-10 text-gray-100" data-i18n="hero.subtitle">
+
+                <p class="text-xl md:text-2xl font-bold bg-black/50 inline-block px-6 py-2 rounded-full border-2 border-white/20 mb-8 text-gray-100"
+                    data-i18n="hero.subtitle">
                     El multijugador más rudo y adorable ha llegado.
                 </p>
-                <div>
-                    <button class="btn btn-error btn-lg border-4 border-black text-white font-black text-2xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-y-1 hover:shadow-none transition-all px-12">
-                        <span data-i18n="hero.cta">DESCARGAR GRATIS</span>
+
+                <div class="flex gap-3 sm:gap-6 justify-center mb-10" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="flex flex-col p-3 bg-black rounded-2xl border-4 border-yellow-400 shadow-[6px_6px_0px_0px_rgba(250,204,21,1)]">
+                        <span class="countdown font-anton text-4xl sm:text-6xl text-white justify-center">
+                            <span id="cd-days" style="--value:0;"></span>
+                        </span>
+                        <span
+                            class="text-xs sm:text-sm font-black uppercase text-yellow-400 tracking-widest mt-1">Días</span>
+                    </div>
+                    <div
+                        class="flex flex-col p-3 bg-black rounded-2xl border-4 border-yellow-400 shadow-[6px_6px_0px_0px_rgba(250,204,21,1)]">
+                        <span class="countdown font-anton text-4xl sm:text-6xl text-white justify-center">
+                            <span id="cd-hours" style="--value:0;"></span>
+                        </span>
+                        <span
+                            class="text-xs sm:text-sm font-black uppercase text-yellow-400 tracking-widest mt-1">Horas</span>
+                    </div>
+                    <div
+                        class="flex flex-col p-3 bg-black rounded-2xl border-4 border-yellow-400 shadow-[6px_6px_0px_0px_rgba(250,204,21,1)]">
+                        <span class="countdown font-anton text-4xl sm:text-6xl text-white justify-center">
+                            <span id="cd-mins" style="--value:0;"></span>
+                        </span>
+                        <span
+                            class="text-xs sm:text-sm font-black uppercase text-yellow-400 tracking-widest mt-1">Min</span>
+                    </div>
+                    <div
+                        class="flex flex-col p-3 bg-black rounded-2xl border-4 border-yellow-400 shadow-[6px_6px_0px_0px_rgba(250,204,21,1)]">
+                        <span class="countdown font-anton text-4xl sm:text-6xl text-white justify-center">
+                            <span id="cd-secs" style="--value:0;"></span>
+                        </span>
+                        <span
+                            class="text-xs sm:text-sm font-black uppercase text-yellow-400 tracking-widest mt-1">Seg</span>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="400">
+                    <button
+                        class="btn btn-error btn-lg border-4 border-black text-white font-black text-2xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-y-1 hover:shadow-none transition-all px-12">
+                        <span data-i18n="hero.cta">PREREGÍSTRATE AHORA</span>
                     </button>
                 </div>
             </div>
@@ -118,95 +195,322 @@
 
         <section id="presentacion" class="py-24 bg-base-100 scroll-mt-16 px-4">
             <div class="max-w-7xl mx-auto">
-                <h2 class="section-title text-center mb-16" data-aos="fade-up" data-i18n="pres.title">¿Qué es Teddy's All-Stars?</h2>
-                
+                <h2 class="section-title text-center mb-16" data-aos="fade-up" data-i18n="pres.title">¿Qué es Teddy's
+                    All-Stars?</h2>
+
                 <div class="mb-20 rounded-3xl overflow-hidden border-8 border-black shadow-2xl" data-aos="fade-up">
-                    <img src="https://via.placeholder.com/1200x600/007bff/FFFFFF?text=PRESENTACION+DEL+JUEGO" alt="Presentación" class="w-full h-auto">
+                    <img src="https://via.placeholder.com/1200x600/007bff/FFFFFF?text=PRESENTACION+DEL+JUEGO"
+                        alt="Presentación" class="w-full h-auto">
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-10 mb-20">
                     <div class="card-cartoon" data-aos="fade-right" data-aos-delay="100">
-                        <img src="https://via.placeholder.com/400x250/FFD700/000000?text=HABILIDADES+UNICAS" alt="Habilidades">
+                        <img src="https://via.placeholder.com/400x250/FFD700/000000?text=HABILIDADES+UNICAS"
+                            alt="Habilidades">
                         <div class="p-6">
-                            <h3 class="font-anton text-2xl text-yellow-400 mb-2 uppercase" data-i18n="pres.feat1.title">Habilidades Únicas</h3>
-                            <p class="text-gray-200" data-i18n="pres.feat1.desc">Cada oso tiene un superpoder devastador que cambia el rumbo de la batalla.</p>
+                            <h3 class="font-anton text-2xl text-yellow-400 mb-2 uppercase" data-i18n="pres.feat1.title">
+                                Habilidades Únicas</h3>
+                            <p class="text-gray-200" data-i18n="pres.feat1.desc">Cada oso tiene un superpoder devastador
+                                que cambia el rumbo de la batalla.</p>
                         </div>
                     </div>
                     <div class="card-cartoon" data-aos="fade-up" data-aos-delay="200">
-                        <img src="https://via.placeholder.com/400x250/FF4500/FFFFFF?text=PERSONALIZACION" alt="Personalización">
+                        <img src="https://via.placeholder.com/400x250/FF4500/FFFFFF?text=PERSONALIZACION"
+                            alt="Personalización">
                         <div class="p-6">
-                            <h3 class="font-anton text-2xl text-error mb-2 uppercase" data-i18n="pres.feat2.title">Personalización Total</h3>
-                            <p class="text-gray-200" data-i18n="pres.feat2.desc">Cientos de skins, accesorios y balones para definir tu estilo.</p>
+                            <h3 class="font-anton text-2xl text-error mb-2 uppercase" data-i18n="pres.feat2.title">
+                                Personalización Total</h3>
+                            <p class="text-gray-200" data-i18n="pres.feat2.desc">Cientos de skins, accesorios y balones
+                                para definir tu estilo.</p>
                         </div>
                     </div>
                     <div class="card-cartoon" data-aos="fade-left" data-aos-delay="300">
-                        <img src="https://via.placeholder.com/400x250/00C851/FFFFFF?text=MULTIJUGADOR" alt="Multijugador">
+                        <img src="https://via.placeholder.com/400x250/00C851/FFFFFF?text=MULTIJUGADOR"
+                            alt="Multijugador">
                         <div class="p-6">
-                            <h3 class="font-anton text-2xl text-success mb-2 uppercase" data-i18n="pres.feat3.title">Caos Multijugador</h3>
-                            <p class="text-gray-200" data-i18n="pres.feat3.desc">Intensas partidas competitivas 3v3 contra jugadores de todo el mundo.</p>
+                            <h3 class="font-anton text-2xl text-success mb-2 uppercase" data-i18n="pres.feat3.title">
+                                Caos Multijugador</h3>
+                            <p class="text-gray-200" data-i18n="pres.feat3.desc">Intensas partidas competitivas 3v3
+                                contra jugadores de todo el mundo.</p>
                         </div>
                     </div>
                 </div>
 
-                <h3 class="section-subtitle text-center mb-10" data-aos="fade-up" data-i18n="pres.videos">GAMEPLAY & TRAILERS</h3>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
-                    <div class="video-placeholder group" data-aos="flip-left" data-aos-delay="100">
-                        <img src="https://via.placeholder.com/300x400/000000/FFFFFF?text=TRAILER+OFICIAL" alt="Trailer">
-                        <div class="play-icon">▶</div>
+                <h3 class="section-subtitle text-center mb-10" data-aos="fade-up" data-i18n="pres.videos">GAMEPLAY &
+                    TRAILERS</h3>
+
+                <div class="carousel w-full rounded-2xl border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-20"
+                    data-aos="zoom-in">
+
+                    <div id="vid1" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                        <div class="video-placeholder group w-full h-full border-none shadow-none rounded-none">
+                            <img src="https://via.placeholder.com/1200x500/000000/FFFFFF?text=TRAILER+OFICIAL"
+                                alt="Trailer" class="w-full h-full object-cover">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div
+                            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
+                            <button onclick="scrollCarousel('vid4')"
+                                class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❮</button>
+                            <button onclick="scrollCarousel('vid2')"
+                                class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❯</button>
+                        </div>
                     </div>
-                    <div class="video-placeholder group" data-aos="flip-left" data-aos-delay="200">
-                        <img src="https://via.placeholder.com/300x400/000000/FFFFFF?text=GAMEPLAY+🐻" alt="Gameplay">
-                        <div class="play-icon">▶</div>
+
+                    <div id="vid2" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                        <div class="video-placeholder group w-full h-full border-none shadow-none rounded-none">
+                            <img src="https://via.placeholder.com/1200x500/000000/FFFFFF?text=GAMEPLAY+🐻"
+                                alt="Gameplay" class="w-full h-full object-cover">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div
+                            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
+                            <button onclick="scrollCarousel('vid1')"
+                                class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❮</button>
+                            <button onclick="scrollCarousel('vid3')"
+                                class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❯</button>
+                        </div>
                     </div>
-                    <div class="video-placeholder group" data-aos="flip-left" data-aos-delay="300">
-                        <img src="https://via.placeholder.com/300x400/000000/FFFFFF?text=OSOS+HABILIDADES" alt="Habilidades">
-                        <div class="play-icon">▶</div>
+
+                    <div id="vid3" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                        <div class="video-placeholder group w-full h-full border-none shadow-none rounded-none">
+                            <img src="https://via.placeholder.com/1200x500/000000/FFFFFF?text=OSOS+HABILIDADES"
+                                alt="Habilidades" class="w-full h-full object-cover">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div
+                            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
+                            <button onclick="scrollCarousel('vid2')"
+                                class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❮</button>
+                            <button onclick="scrollCarousel('vid4')"
+                                class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❯</button>
+                        </div>
                     </div>
-                    <div class="video-placeholder group" data-aos="flip-left" data-aos-delay="400">
-                        <img src="https://via.placeholder.com/300x400/000000/FFFFFF?text=MEJORES+JUGADAS" alt="Highlights">
-                        <div class="play-icon">▶</div>
+
+                    <div id="vid4" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                        <div class="video-placeholder group w-full h-full border-none shadow-none rounded-none">
+                            <img src="https://via.placeholder.com/1200x500/000000/FFFFFF?text=MEJORES+JUGADAS"
+                                alt="Highlights" class="w-full h-full object-cover">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div
+                            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
+                            <button onclick="scrollCarousel('vid3')"
+                                class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❮</button>
+                            <button onclick="scrollCarousel('vid1')"
+                                class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❯</button>
+                        </div>
                     </div>
                 </div>
 
-                <h3 class="section-subtitle text-center mb-10" data-aos="fade-up" data-i18n="pres.gallery">CAPTURAS DE PANTALLA</h3>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    <img src="https://via.placeholder.com/300x300/007bff/FFFFFF?text=SCREENSHOT+1" alt="Shot 1" class="img-gallery" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="https://via.placeholder.com/300x300/007bff/FFFFFF?text=SCREENSHOT+2" alt="Shot 2" class="img-gallery" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="https://via.placeholder.com/300x300/007bff/FFFFFF?text=SCREENSHOT+3" alt="Shot 3" class="img-gallery" data-aos="zoom-in" data-aos-delay="300">
-                    <img src="https://via.placeholder.com/300x300/007bff/FFFFFF?text=SCREENSHOT+4" alt="Shot 4" class="img-gallery" data-aos="zoom-in" data-aos-delay="400">
+                <h3 class="section-subtitle text-center mb-10" data-aos="fade-up" data-i18n="pres.gallery">CAPTURAS DE
+                    PANTALLA</h3>
+
+                <div class="carousel w-full rounded-2xl border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+                    data-aos="zoom-in">
+
+                    <div id="img1" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                        <img src="https://via.placeholder.com/1200x500/007bff/FFFFFF?text=SCREENSHOT+1" alt="Shot 1"
+                            class="w-full h-full object-cover" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <button onclick="scrollCarousel('img4')"
+                                class="btn btn-circle btn-error border-2 border-black hover:scale-105">❮</button>
+                            <button onclick="scrollCarousel('img2')"
+                                class="btn btn-circle btn-error border-2 border-black hover:scale-105">❯</button>
+                        </div>
+                    </div>
+
+                    <div id="img2" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                        <img src="https://via.placeholder.com/1200x500/007bff/FFFFFF?text=SCREENSHOT+2" alt="Shot 2"
+                            class="w-full h-full object-cover" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <button onclick="scrollCarousel('img1')"
+                                class="btn btn-circle btn-error border-2 border-black hover:scale-105">❮</button>
+                            <button onclick="scrollCarousel('img3')"
+                                class="btn btn-circle btn-error border-2 border-black hover:scale-105">❯</button>
+                        </div>
+                    </div>
+
+                    <div id="img3" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                        <img src="https://via.placeholder.com/1200x500/007bff/FFFFFF?text=SCREENSHOT+3" alt="Shot 3"
+                            class="w-full h-full object-cover" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <button onclick="scrollCarousel('img2')"
+                                class="btn btn-circle btn-error border-2 border-black hover:scale-105">❮</button>
+                            <button onclick="scrollCarousel('img4')"
+                                class="btn btn-circle btn-error border-2 border-black hover:scale-105">❯</button>
+                        </div>
+                    </div>
+
+                    <div id="img4" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                        <img src="https://via.placeholder.com/1200x500/007bff/FFFFFF?text=SCREENSHOT+4" alt="Shot 4"
+                            class="w-full h-full object-cover" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <button onclick="scrollCarousel('img3')"
+                                class="btn btn-circle btn-error border-2 border-black hover:scale-105">❮</button>
+                            <button onclick="scrollCarousel('img1')"
+                                class="btn btn-circle btn-error border-2 border-black hover:scale-105">❯</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="osos" class="py-24 bg-[#111] scroll-mt-16 px-4">
             <div class="max-w-7xl mx-auto">
-                <h2 class="section-title text-center mb-16 text-error" data-aos="fade-up" data-i18n="osos.title">CONOCE A LOS ALL-STARS</h2>
-                
+                <h2 class="section-title text-center mb-16 text-error" data-aos="fade-up" data-i18n="osos.title">CONOCE
+                    A LOS ALL-STARS</h2>
+
                 <div class="grid md:grid-cols-4 gap-8 text-center">
                     <div class="card-osos group" data-aos="fade-up" data-aos-delay="100">
                         <div class="placeholder-3d">
-                            <div class="text-xs text-gray-400 p-4" data-i18n="osos.3d">Cargar Modelo 3D Animado (.glb)</div>
+                            <model-viewer 
+                                src="/Modelos/OsitoMexicano.glb" 
+                                alt="Oso Mexicano" 
+                                auto-rotate 
+                                rotation-per-second="30deg"
+                                camera-controls 
+                                autoplay 
+                                shadow-intensity="1" 
+                                class="w-full h-full outline-none"
+                                style="background-color: transparent;">
+                            </model-viewer>
                         </div>
                         <h4 class="font-anton text-2xl text-yellow-400 mt-4 uppercase">"Rocky"</h4>
                         <p class="text-sm text-gray-300 px-4 pb-4" data-i18n="osos.bear1.class">Clase: Delantero</p>
                     </div>
                     <div class="card-osos group" data-aos="fade-up" data-aos-delay="200">
                         <div class="placeholder-3d">
-                            <div class="text-xs text-gray-400 p-4" data-i18n="osos.3d">Cargar Modelo 3D Animado (.glb)</div>
+                            <model-viewer 
+                                src="/Modelos/OsitoGringo.glb"   
+                                alt="Oso Gringo" 
+                                auto-rotate 
+                                rotation-per-second="30deg"
+                                camera-controls 
+                                autoplay 
+                                shadow-intensity="1" 
+                                class="w-full h-full outline-none"
+                                style="background-color: transparent;">
+                            </model-viewer>
                         </div>
                         <h4 class="font-anton text-2xl text-error mt-4 uppercase">"Grizz"</h4>
                         <p class="text-sm text-gray-300 px-4 pb-4" data-i18n="osos.bear2.class">Clase: Tanque</p>
                     </div>
                     <div class="card-osos group" data-aos="fade-up" data-aos-delay="300">
                         <div class="placeholder-3d">
-                            <div class="text-xs text-gray-400 p-4" data-i18n="osos.3d">Cargar Modelo 3D Animado (.glb)</div>
+                            <model-viewer 
+                                src="/Modelos/OsitoCanadiense.glb" 
+                                alt="Oso Canadiense" 
+                                auto-rotate 
+                                rotation-per-second="30deg"
+                                camera-controls 
+                                autoplay 
+                                shadow-intensity="1" 
+                                class="w-full h-full outline-none"
+                                style="background-color: transparent;">
+                            </model-viewer>
                         </div>
                         <h4 class="font-anton text-2xl text-success mt-4 uppercase">"Panda"</h4>
                         <p class="text-sm text-gray-300 px-4 pb-4" data-i18n="osos.bear3.class">Clase: Apoyo</p>
                     </div>
                     <div class="card-osos group" data-aos="fade-up" data-aos-delay="400">
                         <div class="placeholder-3d">
-                            <div class="text-xs text-gray-400 p-4" data-i18n="osos.3d">Cargar Modelo 3D Animado (.glb)</div>
+                            <model-viewer 
+                                src="/Modelos/OsitoJapones.glb" 
+                                alt="Oso Japonés" 
+                                auto-rotate 
+                                rotation-per-second="30deg"
+                                camera-controls 
+                                autoplay 
+                                shadow-intensity="1" 
+                                class="w-full h-full outline-none"
+                                style="background-color: transparent;">
+                            </model-viewer>
+                        </div>
+                        <h4 class="font-anton text-2xl text-info mt-4 uppercase">"Polar"</h4>
+                        <p class="text-sm text-gray-300 px-4 pb-4" data-i18n="osos.bear4.class">Clase: Velocista</p>
+                    </div>
+                    <div class="card-osos group" data-aos="fade-up" data-aos-delay="400">
+                        <div class="placeholder-3d">
+                            <model-viewer 
+                                src="/Modelos/OsitoBrasilero.glb" 
+                                alt="Oso Brasileño" 
+                                auto-rotate 
+                                rotation-per-second="30deg"
+                                camera-controls 
+                                autoplay 
+                                shadow-intensity="1" 
+                                class="w-full h-full outline-none"
+                                style="background-color: transparent;">
+                            </model-viewer>
+                        </div>
+                        <h4 class="font-anton text-2xl text-info mt-4 uppercase">"Polar"</h4>
+                        <p class="text-sm text-gray-300 px-4 pb-4" data-i18n="osos.bear4.class">Clase: Velocista</p>
+                    </div>
+                    <div class="card-osos group" data-aos="fade-up" data-aos-delay="400">
+                        <div class="placeholder-3d">
+                            <model-viewer 
+                                src="/Modelos/OsitoAleman.glb" 
+                                alt="Oso Alemán" 
+                                auto-rotate 
+                                rotation-per-second="30deg"
+                                camera-controls 
+                                autoplay 
+                                shadow-intensity="1" 
+                                class="w-full h-full outline-none"
+                                style="background-color: transparent;">
+                            </model-viewer>
+                        </div>
+                        <h4 class="font-anton text-2xl text-info mt-4 uppercase">"Polar"</h4>
+                        <p class="text-sm text-gray-300 px-4 pb-4" data-i18n="osos.bear4.class">Clase: Velocista</p>
+                    </div>
+                    <div class="card-osos group" data-aos="fade-up" data-aos-delay="400">
+                        <div class="placeholder-3d">
+                            <model-viewer 
+                                src="/Modelos/OsitoArgentino.glb" 
+                                alt="Oso Argentino" 
+                                auto-rotate 
+                                rotation-per-second="30deg"
+                                camera-controls 
+                                autoplay 
+                                shadow-intensity="1" 
+                                class="w-full h-full outline-none"
+                                style="background-color: transparent;">
+                            </model-viewer>
+                        </div>
+                        <h4 class="font-anton text-2xl text-info mt-4 uppercase">"Polar"</h4>
+                        <p class="text-sm text-gray-300 px-4 pb-4" data-i18n="osos.bear4.class">Clase: Velocista</p>
+                    </div>
+                    <div class="card-osos group" data-aos="fade-up" data-aos-delay="400">
+                        <div class="placeholder-3d">
+                            <model-viewer 
+                                src="/Modelos/OsitoFrances.glb" 
+                                alt="Oso Francés" 
+                                auto-rotate 
+                                rotation-per-second="30deg"
+                                camera-controls 
+                                autoplay 
+                                shadow-intensity="1" 
+                                class="w-full h-full outline-none"
+                                style="background-color: transparent;">
+                            </model-viewer>
+                        </div>
+                        <h4 class="font-anton text-2xl text-info mt-4 uppercase">"Polar"</h4>
+                        <p class="text-sm text-gray-300 px-4 pb-4" data-i18n="osos.bear4.class">Clase: Velocista</p>
+                    </div>
+                    <div class="card-osos group" data-aos="fade-up" data-aos-delay="400">
+                        <div class="placeholder-3d">
+                            <model-viewer 
+                                src="/Modelos/OsitoEspanol.glb" 
+                                alt="Oso Español" 
+                                auto-rotate 
+                                rotation-per-second="30deg"
+                                camera-controls 
+                                autoplay 
+                                shadow-intensity="1" 
+                                class="w-full h-full outline-none"
+                                style="background-color: transparent;">
+                            </model-viewer>
                         </div>
                         <h4 class="font-anton text-2xl text-info mt-4 uppercase">"Polar"</h4>
                         <p class="text-sm text-gray-300 px-4 pb-4" data-i18n="osos.bear4.class">Clase: Velocista</p>
@@ -217,28 +521,36 @@
 
         <section id="arena" class="py-24 bg-base-100 scroll-mt-16 px-4">
             <div class="max-w-7xl mx-auto">
-                <h2 class="section-title text-center mb-16 text-success" data-aos="fade-up" data-i18n="arena.title">LAS ARENAS MÁS LOCAS</h2>
-                
+                <h2 class="section-title text-center mb-16 text-success" data-aos="fade-up" data-i18n="arena.title">LAS
+                    ARENAS MÁS LOCAS</h2>
+
                 <div class="grid md:grid-cols-3 gap-10">
                     <div class="card-cartoon" data-aos="flip-up" data-aos-delay="100">
                         <img src="https://via.placeholder.com/500x300/000/0F0?text=ARENA:+FABRICA+DULCES" alt="Arena 1">
                         <div class="p-6">
-                            <h3 class="font-anton text-2xl text-success mb-2 uppercase" data-i18n="arena.map1.title">Fábrica de Caramelos</h3>
-                            <p class="text-gray-200" data-i18n="arena.map1.desc">Cuidado con el suelo pegajoso y las paletas gigantes.</p>
+                            <h3 class="font-anton text-2xl text-success mb-2 uppercase" data-i18n="arena.map1.title">
+                                Fábrica de Caramelos</h3>
+                            <p class="text-gray-200" data-i18n="arena.map1.desc">Cuidado con el suelo pegajoso y las
+                                paletas gigantes.</p>
                         </div>
                     </div>
                     <div class="card-cartoon" data-aos="flip-up" data-aos-delay="200">
                         <img src="https://via.placeholder.com/500x300/000/0F0?text=ARENA:+TECHO+CIUDAD" alt="Arena 2">
                         <div class="p-6">
-                            <h3 class="font-anton text-2xl text-success mb-2 uppercase" data-i18n="arena.map2.title">Rooftop Cyberpunk</h3>
-                            <p class="text-gray-200" data-i18n="arena.map2.desc">Juega en las alturas entre luces neón y ventiladores gigantes.</p>
+                            <h3 class="font-anton text-2xl text-success mb-2 uppercase" data-i18n="arena.map2.title">
+                                Rooftop Cyberpunk</h3>
+                            <p class="text-gray-200" data-i18n="arena.map2.desc">Juega en las alturas entre luces neón y
+                                ventiladores gigantes.</p>
                         </div>
                     </div>
                     <div class="card-cartoon" data-aos="flip-up" data-aos-delay="300">
-                        <img src="https://via.placeholder.com/500x300/000/0F0?text=ARENA:+ESTADIO+ESPACIAL" alt="Arena 3">
+                        <img src="https://via.placeholder.com/500x300/000/0F0?text=ARENA:+ESTADIO+ESPACIAL"
+                            alt="Arena 3">
                         <div class="p-6">
-                            <h3 class="font-anton text-2xl text-success mb-2 uppercase" data-i18n="arena.map3.title">Gravedad Cero</h3>
-                            <p class="text-gray-200" data-i18n="arena.map3.desc">Balonmano espacial con portales y baja gravedad.</p>
+                            <h3 class="font-anton text-2xl text-success mb-2 uppercase" data-i18n="arena.map3.title">
+                                Gravedad Cero</h3>
+                            <p class="text-gray-200" data-i18n="arena.map3.desc">Balonmano espacial con portales y baja
+                                gravedad.</p>
                         </div>
                     </div>
                 </div>
@@ -247,32 +559,48 @@
 
         <section id="noticias" class="py-24 bg-[#111] scroll-mt-16 px-4">
             <div class="max-w-7xl mx-auto">
-                <h2 class="section-title text-center mb-16 text-yellow-400" data-aos="fade-up" data-i18n="news.title">ÚLTIMAS NOVEDADES</h2>
-                
+                <h2 class="section-title text-center mb-16 text-yellow-400" data-aos="fade-up" data-i18n="news.title">
+                    ÚLTIMAS NOVEDADES</h2>
+
                 <div class="grid md:grid-cols-2 gap-10">
-                    <div class="card-cartoon md:col-span-2 flex flex-col md:flex-row items-center" data-aos="fade-right">
-                        <img src="https://via.placeholder.com/400x300/FFD700/000000?text=NOTICIA+DESTACADA" alt="News 1" class="w-full md:w-2/5 h-full object-cover border-b-4 md:border-b-0 md:border-r-4 border-black">
+                    <div class="card-cartoon md:col-span-2 flex flex-col md:flex-row items-center"
+                        data-aos="fade-right">
+                        <img src="https://via.placeholder.com/400x300/FFD700/000000?text=NOTICIA+DESTACADA" alt="News 1"
+                            class="w-full md:w-2/5 h-full object-cover border-b-4 md:border-b-0 md:border-r-4 border-black">
                         <div class="p-8">
-                            <div class="badge badge-warning mb-2 font-bold" data-i18n="news.tag.update">ACTUALIZACIÓN</div>
-                            <h3 class="font-anton text-3xl text-white mb-4 uppercase" data-i18n="news.art1.title">Parche 1.2: Skins de Verano</h3>
-                            <p class="text-gray-200 mb-6" data-i18n="news.art1.desc">Prepara a tus osos para la playa con trajes de baño. ¡Ya disponible!</p>
-                            <button class="btn btn-sm btn-outline btn-warning font-bold" data-i18n="news.readmore">Leer más</button>
+                            <div class="badge badge-warning mb-2 font-bold" data-i18n="news.tag.update">ACTUALIZACIÓN
+                            </div>
+                            <h3 class="font-anton text-3xl text-white mb-4 uppercase" data-i18n="news.art1.title">Parche
+                                1.2: Skins de Verano</h3>
+                            <p class="text-gray-200 mb-6" data-i18n="news.art1.desc">Prepara a tus osos para la playa
+                                con trajes de baño. ¡Ya disponible!</p>
+                            <button class="btn btn-sm btn-outline btn-warning font-bold" data-i18n="news.readmore">Leer
+                                más</button>
                         </div>
                     </div>
-                    <div class="card-cartoon flex flex-col md:flex-row items-center" data-aos="fade-up" data-aos-delay="100">
-                        <img src="https://via.placeholder.com/200x200/FF4500/FFFFFF?text=EVENTO" alt="News 2" class="w-full md:w-1/3 h-full object-cover border-b-4 md:border-b-0 md:border-r-4 border-black">
+                    <div class="card-cartoon flex flex-col md:flex-row items-center" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <img src="https://via.placeholder.com/200x200/FF4500/FFFFFF?text=EVENTO" alt="News 2"
+                            class="w-full md:w-1/3 h-full object-cover border-b-4 md:border-b-0 md:border-r-4 border-black">
                         <div class="p-6">
                             <div class="badge badge-error mb-2 font-bold" data-i18n="news.tag.event">EVENTO</div>
-                            <h3 class="font-anton text-xl text-white mb-2 uppercase" data-i18n="news.art2.title">Torneo de Comunidades: Inscríbete</h3>
-                            <p class="text-sm text-gray-300" data-i18n="news.art2.desc">Demuestra quién es el mejor All-Star. Premios exclusivos.</p>
+                            <h3 class="font-anton text-xl text-white mb-2 uppercase" data-i18n="news.art2.title">Torneo
+                                de Comunidades: Inscríbete</h3>
+                            <p class="text-sm text-gray-300" data-i18n="news.art2.desc">Demuestra quién es el mejor
+                                All-Star. Premios exclusivos.</p>
                         </div>
                     </div>
-                    <div class="card-cartoon flex flex-col md:flex-row items-center" data-aos="fade-up" data-aos-delay="200">
-                        <img src="https://via.placeholder.com/200x200/00C851/FFFFFF?text=COMUNIDAD" alt="News 3" class="w-full md:w-1/3 h-full object-cover border-b-4 md:border-b-0 md:border-r-4 border-black">
+                    <div class="card-cartoon flex flex-col md:flex-row items-center" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <img src="https://via.placeholder.com/200x200/00C851/FFFFFF?text=COMUNIDAD" alt="News 3"
+                            class="w-full md:w-1/3 h-full object-cover border-b-4 md:border-b-0 md:border-r-4 border-black">
                         <div class="p-6">
-                            <div class="badge badge-success mb-2 font-bold" data-i18n="news.tag.community">COMUNIDAD</div>
-                            <h3 class="font-anton text-xl text-white mb-2 uppercase" data-i18n="news.art3.title">Fan Art del Mes: Ganadores</h3>
-                            <p class="text-sm text-gray-300" data-i18n="news.art3.desc">Mira los dibujos más increíbles hechos por nuestros jugadores.</p>
+                            <div class="badge badge-success mb-2 font-bold" data-i18n="news.tag.community">COMUNIDAD
+                            </div>
+                            <h3 class="font-anton text-xl text-white mb-2 uppercase" data-i18n="news.art3.title">Fan Art
+                                del Mes: Ganadores</h3>
+                            <p class="text-sm text-gray-300" data-i18n="news.art3.desc">Mira los dibujos más increíbles
+                                hechos por nuestros jugadores.</p>
                         </div>
                     </div>
                 </div>
@@ -288,8 +616,13 @@
         </footer>
     </div>
 
+    <audio id="bg-music" loop>
+        <source src="Teddy Bear Waltz.mp3" type="audio/mpeg">
+    </audio>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script type="module" src="main.js"></script>
 </body>
+
 </html>

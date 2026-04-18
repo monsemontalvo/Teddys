@@ -1,4 +1,3 @@
-
 // ==========================================
 // 1. FUNCIÓN DE CAMBIO DE IDIOMA
 // ==========================================
@@ -24,18 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // A. Inicializar i18next usando el Backend para leer los JSON
     i18next
-        .use(i18nextHttpBackend) // Le decimos que use el plugin de fetch
+        .use(i18nextHttpBackend) 
         .init({
-            lng: 'es',           // Idioma por defecto
-            fallbackLng: 'es',   // Si falla algo, regresa a español
+            lng: 'es',           
+            fallbackLng: 'es',   
             debug: false,
             backend: {
-                // Ruta dinámica donde buscará los archivos JSON
                 loadPath: './locales/{{lng}}.json' 
             }
         }, (err, t) => {
             if (err) return console.error("Error cargando i18next:", err);
-            // Traducir la página por primera vez una vez que el JSON se descargó
             updateContent();
         });
 
@@ -57,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }, 2000);
 
-    // Fase 2: Mostrar la página (SPA logic) y arrancar animaciones
+    // Fase 2: Mostrar la página y arrancar animaciones
     setTimeout(() => {
         if (loadingScreen) loadingScreen.classList.add('opacity-0'); 
         
@@ -67,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 mainContent.classList.remove('opacity-0');
                 mainContent.classList.add('opacity-100');
                 
-                // Inicializar animaciones de scroll
                 AOS.init({
                     duration: 800, 
                     easing: 'ease-out-back', 
@@ -83,4 +79,82 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         if (loadingScreen) loadingScreen.remove(); 
     }, 5000);
+
+    // ==========================================
+    // 4. CONTROL DE MÚSICA DE FONDO
+    // ==========================================
+    const bgMusic = document.getElementById('bg-music');
+    const musicToggleBtn = document.getElementById('music-toggle');
+    const iconMusicOn = document.getElementById('icon-music-on');
+    const iconMusicOff = document.getElementById('icon-music-off');
+
+    let isMusicPlaying = false;
+    
+    // Bajar un poco el volumen (30%) para que no sature
+    if(bgMusic) bgMusic.volume = 0.3;
+
+    if (musicToggleBtn && bgMusic) {
+        musicToggleBtn.addEventListener('click', () => {
+            if (isMusicPlaying) {
+                // Pausar
+                bgMusic.pause();
+                iconMusicOn.classList.add('hidden');
+                iconMusicOff.classList.remove('hidden');
+            } else {
+                // Reproducir
+                bgMusic.play().catch(error => console.log("Audio play failed:", error));
+                iconMusicOff.classList.add('hidden');
+                iconMusicOn.classList.remove('hidden');
+            }
+            isMusicPlaying = !isMusicPlaying;
+        });
+    }
 });
+
+// ==========================================
+// 3. NAVEGACIÓN SUAVE DE CARRUSELES
+// ==========================================
+window.scrollCarousel = function(targetId) {
+    const target = document.getElementById(targetId);
+    if (target) {
+        const carousel = target.closest('.carousel');
+        carousel.scrollTo({
+            left: target.offsetLeft,
+            behavior: 'smooth'
+        });
+    }
+}
+
+// ==========================================
+// 5. CONTADOR DE LANZAMIENTO (24 MAYO 2026)
+// ==========================================
+const launchDate = new Date("May 24, 2026 00:00:00").getTime();
+
+const updateCountdown = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = launchDate - now;
+
+    // Si la fecha ya pasó, detenemos el contador
+    if (distance < 0) {
+        clearInterval(updateCountdown);
+        // Opcional: Aquí podrías hacer que los números se queden en 0
+        return;
+    }
+
+    // Cálculos de tiempo
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Actualizamos el DOM (DaisyUI usa la variable CSS --value para animar los números)
+    const elDays = document.getElementById("cd-days");
+    const elHours = document.getElementById("cd-hours");
+    const elMins = document.getElementById("cd-mins");
+    const elSecs = document.getElementById("cd-secs");
+
+    if (elDays) elDays.style.setProperty('--value', days);
+    if (elHours) elHours.style.setProperty('--value', hours);
+    if (elMins) elMins.style.setProperty('--value', minutes);
+    if (elSecs) elSecs.style.setProperty('--value', seconds);
+}, 1000);
