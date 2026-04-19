@@ -33,20 +33,14 @@
 
 <body class="bg-black text-white m-0 p-0 overflow-x-hidden">
 
-    <div id="loading-screen"
-        class="fixed inset-0 bg-black flex justify-center items-center z-[1000] transition-opacity duration-1000">
+<div id="loading-screen" class="fixed inset-0 bg-black flex justify-center items-center z-[1000] transition-opacity duration-1000">
         <div class="loader-content flex flex-col items-center gap-8 w-full px-4">
-            <div class="dots-loader flex gap-2 sm:gap-4 scale-100 sm:scale-150">
-                <span class="loading loading-spinner loading-md sm:loading-lg text-primary"></span>
-                <span class="loading loading-spinner loading-md sm:loading-lg text-secondary"></span>
-                <span class="loading loading-spinner loading-md sm:loading-lg text-accent"></span>
-                <span class="loading loading-spinner loading-md sm:loading-lg text-info"></span>
-                <span class="loading loading-spinner loading-md sm:loading-lg text-success"></span>
-                <span class="loading loading-spinner loading-md sm:loading-lg text-warning"></span>
-                <span class="loading loading-spinner loading-md sm:loading-lg text-error"></span>
+            
+            <div class="dots-loader w-64 md:w-96 flex flex-col items-center gap-4">
+                <progress class="progress progress-warning w-full"></progress>
             </div>
-            <img id="loading-logo" src="/Multimedia/teddylogo.png" alt="Logo"
-                class="hidden w-144 sm:w-192 md:max-w-[900px] opacity-0 transition-opacity duration-1000 rounded-2xl shadow-2xl">
+
+            <img id="loading-logo" src="/Multimedia/teddylogo.png" alt="Logo" class="hidden w-144 sm:w-192 md:max-w-[900px] opacity-0 transition-opacity duration-1000 rounded-2xl shadow-2xl">
         </div>
     </div>
 

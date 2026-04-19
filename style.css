@@ -118,3 +118,16 @@ html {
     .section-title { font-size: 2.5rem; }
 }
 
+/* Animación para la barra de carga del inicio */
+.fill-bar {
+    width: 0%;
+    /* Dura 3.8s porque tu JS oculta la pantalla a los 4s */
+    animation: fillAction 3.8s ease-out forwards; 
+}
+
+@keyframes fillAction {
+    0% { width: 0%; }
+    30% { width: 40%; }
+    70% { width: 75%; }
+    100% { width: 100%; }
+}
