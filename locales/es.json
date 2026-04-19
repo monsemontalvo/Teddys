@@ -1,50 +1,114 @@
 {
-  "nav": { "pres": "Presentación", "bears": "Osos", "arena": "Arena", "news": "Noticias", "play": "PREREGÍSTRATE AHORA" },
-  "hero": {
-      "title": "¡Colecciona Estrellas y Domina la Arena!",
-      "subtitle": "El multijugador más rudo y adorable ha llegado.",
-      "cta": "PREREGÍSTRATE AHORA",
-      "cd_days": "Días",
-      "cd_hours": "Horas",
-      "cd_mins": "Min",
-      "cd_secs": "Seg"
-  },
-  "pres": {
-      "title": "¿Qué es Teddy's All-Stars?",
-      "feat1": { "title": "Habilidades Únicas", "desc": "Cada oso tiene un superpoder devastador que cambia el rumbo de la batalla." },
-      "feat2": { "title": "Personalización Total", "desc": "Cientos de skins, accesorios y balones para definir tu estilo." },
-      "feat3": { "title": "Caos Multijugador", "desc": "Intensas partidas competitivas 3v3 contra jugadores de todo el mundo." },
-      "videos": "GAMEPLAY & TRAILERS",
-      "gallery": "CAPTURAS DE PANTALLA"
-  },
-  "osos": {
-      "title": "CONOCE A LOS ALL-STARS",
-      "3d": "Cargar Modelo 3D Animado (.glb)",
-      "bear1": { "name": "Pancho", "country": "País: México" },
-      "bear2": { "name": "Sam", "country": "País: Estados Unidos" },
-      "bear3": { "name": "Kuma", "country": "País: Japón" },
-      "bear4": { "name": "Maple", "country": "País: Canadá" },
-      "bear5": { "name": "Rio", "country": "País: Brasil" },
-      "bear6": { "name": "Pierre", "country": "País: Francia" },
-      "bear7": { "name": "Che", "country": "País: Argentina" },
-      "bear8": { "name": "Toro", "country": "País: España" },
-      "bear9": { "name": "Otto", "country": "País: Alemania" }
-  },
-  "arena": {
-      "title": "LAS ARENAS MÁS LOCAS",
-      "map1": { "title": "Fábrica de Caramelos", "desc": "Cuidado con el suelo pegajoso y las paletas gigantes." },
-      "map2": { "title": "Rooftop Cyberpunk", "desc": "Juega en las alturas entre luces neón y ventiladores gigantes." },
-      "map3": { "title": "Gravedad Cero", "desc": "Balonmano espacial con portales y baja gravedad." }
-  },
-  "news": {
-      "title": "ÚLTIMAS NOVEDADES",
-      "readmore": "Leer más",
-      "tag": { "update": "ACTUALIZACIÓN", "event": "EVENTO", "community": "COMUNIDAD" },
-      "art1": { "title": "Parche 1.2: Skins de Verano", "desc": "Prepara a tus osos para la playa con trajes de baño. ¡Ya disponible!" },
-      "art2": { "title": "Torneo de Comunidades: Inscríbete", "desc": "Demuestra quién es el mejor All-Star. Premios exclusivos." },
-      "art3": { "title": "Fan Art del Mes: Ganadores", "desc": "Mira los dibujos más increíbles hechos por nuestros jugadores." }
-  },
-  "footer": {
-      "rights": "© 2026 - Todos los derechos reservados."
-  }
+    "nav": {
+        "pres": "Presentación",
+        "bears": "Osos",
+        "arena": "Arena",
+        "news": "Noticias",
+        "play": "PREREGÍSTRATE AHORA"
+    },
+    "hero": {
+        "title": "¡Colecciona Estrellas y Domina la Arena!",
+        "subtitle": "El multijugador más rudo y adorable ha llegado.",
+        "cta": "PREREGÍSTRATE AHORA",
+        "cd_days": "Días",
+        "cd_hours": "Horas",
+        "cd_mins": "Min",
+        "cd_secs": "Seg"
+    },
+    "pres": {
+        "title": "¿Qué es Teddy's All-Stars?",
+        "feat1": {
+            "title": "Arsenal Elemental",
+            "desc": "Domina el campo con balones de hielo para congelar a tus rivales o el balón mortal de fuego para eliminarlos."
+        },
+        "feat2": {
+            "title": "Estilo Global",
+            "desc": "Personaliza a tu oso con accesorios de diferentes países para representar tu orgullo en la arena."
+        },
+        "feat3": {
+            "title": "Caos para 4 Jugadores",
+            "desc": "Compite en intensas partidas de todos contra todos: recolecta 5 estrellas y conviértete en el último oso en pie."
+        },
+        "videos": "GAMEPLAY & TRAILERS",
+        "gallery": "EL MUNDO DE TEDDY'S ALL-STARS"
+    },
+    "osos": {
+        "title": "CONOCE A LOS ALL-STARS",
+        "3d": "Cargar Modelo 3D Animado (.glb)",
+        "bear1": {
+            "name": "Pancho",
+            "country": "País: México"
+        },
+        "bear2": {
+            "name": "Sam",
+            "country": "País: Estados Unidos"
+        },
+        "bear3": {
+            "name": "Kuma",
+            "country": "País: Japón"
+        },
+        "bear4": {
+            "name": "Maple",
+            "country": "País: Canadá"
+        },
+        "bear5": {
+            "name": "Rio",
+            "country": "País: Brasil"
+        },
+        "bear6": {
+            "name": "Pierre",
+            "country": "País: Francia"
+        },
+        "bear7": {
+            "name": "Che",
+            "country": "País: Argentina"
+        },
+        "bear8": {
+            "name": "Toro",
+            "country": "País: España"
+        },
+        "bear9": {
+            "name": "Otto",
+            "country": "País: Alemania"
+        }
+    },
+    "arena": {
+        "title": "EL CAMPO DE BATALLA",
+        "map1": {
+            "title": "Obstáculos naturales",
+            "desc": "Usa las rocas y el río para cubrirte de los ataques enemigos."
+        },
+        "map2": {
+            "title": "Zonas de Base",
+            "desc": "Cada esquina del terreno cuenta con una base personalizada para ti."
+        },
+        "map3": {
+            "title": "Estética Estilizada",
+            "desc": "Gráficos vibrantes que combinan la tranquilidad del campo con el caos de la batalla."
+        }
+    },
+    "news": {
+        "title": "ÚLTIMAS NOVEDADES",
+        "readmore": "Leer más",
+        "tag": {
+            "update": "ACTUALIZACIÓN",
+            "event": "EVENTO",
+            "community": "COMUNIDAD"
+        },
+        "art1": {
+            "title": "Parche 1.2: Skins de Verano",
+            "desc": "Prepara a tus osos para la playa con trajes de baño. ¡Disponible proximamente!"
+        },
+        "art2": {
+            "title": "Torneo de Comunidades: Inscríbete",
+            "desc": "Demuestra quién es el mejor All-Star. Premios exclusivos."
+        },
+        "art3": {
+            "title": "Fan Art del Mes: Ganadores",
+            "desc": "Mira los dibujos más increíbles hechos por nuestros jugadores."
+        }
+    },
+    "footer": {
+        "rights": "© 2026 - Todos los derechos reservados."
+    }
 }

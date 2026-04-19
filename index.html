@@ -44,7 +44,7 @@
                 <span class="loading loading-spinner loading-md sm:loading-lg text-warning"></span>
                 <span class="loading loading-spinner loading-md sm:loading-lg text-error"></span>
             </div>
-            <img id="loading-logo" src="teddylogo.png" alt="Logo" class="hidden w-144 sm:w-192 md:max-w-[900px] opacity-0 transition-opacity duration-1000 rounded-2xl shadow-2xl">
+            <img id="loading-logo" src="/Multimedia/teddylogo.png" alt="Logo" class="hidden w-144 sm:w-192 md:max-w-[900px] opacity-0 transition-opacity duration-1000 rounded-2xl shadow-2xl">
         </div>
     </div>
 
@@ -110,7 +110,7 @@
 
         <section id="hero" class="relative w-full h-[100svh] flex items-center justify-center overflow-hidden pt-16 scroll-mt-16">
             <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
-                <source src="WebPage.mp4" type="video/mp4">
+                <source src="/Multimedia/WebPage.mp4" type="video/mp4">
             </video>
             <div class="absolute inset-0 bg-black/50 z-[5]"></div>
             <div class="relative z-10 text-center px-4 max-w-5xl mx-auto" data-aos="zoom-in">
@@ -159,26 +159,26 @@
                 <h2 class="section-title text-center mb-16" data-aos="fade-up" data-i18n="pres.title"></h2>
                 
                 <div class="mb-20 rounded-3xl overflow-hidden border-8 border-black shadow-2xl" data-aos="fade-up">
-                    <img src="https://via.placeholder.com/1200x600/007bff/FFFFFF?text=PRESENTACION+DEL+JUEGO" alt="Presentación" class="w-full h-auto">
+                    <img src="/Multimedia/jugando1.png" alt="Presentación" class="w-full h-auto">
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-10 mb-20">
                     <div class="card-cartoon" data-aos="fade-right" data-aos-delay="100">
-                        <img src="https://via.placeholder.com/400x250/FFD700/000000?text=HABILIDADES+UNICAS" alt="Habilidades">
+                        <img src="/Multimedia/congelado.png" alt="Habilidades">
                         <div class="p-6">
                             <h3 class="font-anton text-2xl text-yellow-400 mb-2 uppercase" data-i18n="pres.feat1.title"></h3>
                             <p class="text-gray-200" data-i18n="pres.feat1.desc"></p>
                         </div>
                     </div>
                     <div class="card-cartoon" data-aos="fade-up" data-aos-delay="200">
-                        <img src="https://via.placeholder.com/400x250/FF4500/FFFFFF?text=PERSONALIZACION" alt="Personalización">
+                        <img src="/Multimedia/Skin.png" alt="Personalización">
                         <div class="p-6">
                             <h3 class="font-anton text-2xl text-error mb-2 uppercase" data-i18n="pres.feat2.title"></h3>
                             <p class="text-gray-200" data-i18n="pres.feat2.desc"></p>
                         </div>
                     </div>
                     <div class="card-cartoon" data-aos="fade-left" data-aos-delay="300">
-                        <img src="https://via.placeholder.com/400x250/00C851/FFFFFF?text=MULTIJUGADOR" alt="Multijugador">
+                        <img src="/Multimedia/competencia.png" alt="Multijugador">
                         <div class="p-6">
                             <h3 class="font-anton text-2xl text-success mb-2 uppercase" data-i18n="pres.feat3.title"></h3>
                             <p class="text-gray-200" data-i18n="pres.feat3.desc"></p>
@@ -233,28 +233,63 @@
                 <h3 class="section-subtitle text-center mb-10" data-aos="fade-up" data-i18n="pres.gallery"></h3>
                 <div class="carousel w-full rounded-2xl border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]" data-aos="zoom-in">
                     <div id="img1" class="carousel-item relative w-full h-[300px] md:h-[500px]">
-                        <img src="https://via.placeholder.com/1200x500/007bff/FFFFFF?text=SCREENSHOT+1" class="w-full h-full object-cover" />
+                        <img src="/Multimedia/casa1.png" class="w-full h-full object-cover" />
                         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                             <button onclick="scrollCarousel('img4')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❮</button>
                             <button onclick="scrollCarousel('img2')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❯</button>
                         </div>
                     </div>
                     <div id="img2" class="carousel-item relative w-full h-[300px] md:h-[500px]">
-                        <img src="https://via.placeholder.com/1200x500/007bff/FFFFFF?text=SCREENSHOT+2" class="w-full h-full object-cover" />
+                        <img src="/Multimedia/casa2.png" class="w-full h-full object-cover" />
                         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                             <button onclick="scrollCarousel('img1')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❮</button>
                             <button onclick="scrollCarousel('img3')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❯</button>
                         </div>
                     </div>
                     <div id="img3" class="carousel-item relative w-full h-[300px] md:h-[500px]">
-                        <img src="https://via.placeholder.com/1200x500/007bff/FFFFFF?text=SCREENSHOT+3" class="w-full h-full object-cover" />
+                        <img src="/Multimedia/casa3.png" class="w-full h-full object-cover" />
                         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                             <button onclick="scrollCarousel('img2')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❮</button>
                             <button onclick="scrollCarousel('img4')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❯</button>
                         </div>
                     </div>
                     <div id="img4" class="carousel-item relative w-full h-[300px] md:h-[500px]">
-                        <img src="https://via.placeholder.com/1200x500/007bff/FFFFFF?text=SCREENSHOT+4" class="w-full h-full object-cover" />
+                        <img src="/Multimedia/jugando3.png" class="w-full h-full object-cover" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <button onclick="scrollCarousel('img3')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❮</button>
+                            <button onclick="scrollCarousel('img1')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❯</button>
+                        </div>
+                    </div>
+                    <div id="img4" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                        <img src="/Multimedia/campo1.png" class="w-full h-full object-cover" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <button onclick="scrollCarousel('img3')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❮</button>
+                            <button onclick="scrollCarousel('img1')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❯</button>
+                        </div>
+                    </div>
+                    <div id="img4" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                        <img src="/Multimedia/campo2.png" class="w-full h-full object-cover" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <button onclick="scrollCarousel('img3')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❮</button>
+                            <button onclick="scrollCarousel('img1')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❯</button>
+                        </div>
+                    </div>
+                    <div id="img4" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                        <img src="/Multimedia/campo3.png" class="w-full h-full object-cover" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <button onclick="scrollCarousel('img3')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❮</button>
+                            <button onclick="scrollCarousel('img1')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❯</button>
+                        </div>
+                    </div>
+                    <div id="img4" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                        <img src="/Multimedia/campo4.png" class="w-full h-full object-cover" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <button onclick="scrollCarousel('img3')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❮</button>
+                            <button onclick="scrollCarousel('img1')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❯</button>
+                        </div>
+                    </div>
+                    <div id="img4" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                        <img src="/Multimedia/powerups.png" class="w-full h-full object-cover" />
                         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                             <button onclick="scrollCarousel('img3')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❮</button>
                             <button onclick="scrollCarousel('img1')" class="btn btn-circle btn-error border-2 border-black hover:scale-105">❯</button>
@@ -350,21 +385,21 @@
                 
                 <div class="grid md:grid-cols-3 gap-10">
                     <div class="card-cartoon" data-aos="flip-up" data-aos-delay="100">
-                        <img src="https://via.placeholder.com/500x300/000/0F0?text=ARENA:+FABRICA+DULCES" alt="Arena 1">
+                        <img src="/Multimedia/jugando2.png" alt="Arena 1">
                         <div class="p-6">
                             <h3 class="font-anton text-2xl text-success mb-2 uppercase" data-i18n="arena.map1.title"></h3>
                             <p class="text-gray-200" data-i18n="arena.map1.desc"></p>
                         </div>
                     </div>
                     <div class="card-cartoon" data-aos="flip-up" data-aos-delay="200">
-                        <img src="https://via.placeholder.com/500x300/000/0F0?text=ARENA:+TECHO+CIUDAD" alt="Arena 2">
+                        <img src="/Multimedia/base.png" alt="Arena 2">
                         <div class="p-6">
                             <h3 class="font-anton text-2xl text-success mb-2 uppercase" data-i18n="arena.map2.title"></h3>
                             <p class="text-gray-200" data-i18n="arena.map2.desc"></p>
                         </div>
                     </div>
                     <div class="card-cartoon" data-aos="flip-up" data-aos-delay="300">
-                        <img src="https://via.placeholder.com/500x300/000/0F0?text=ARENA:+ESTADIO+ESPACIAL" alt="Arena 3">
+                        <img src="/Multimedia/campo.png" alt="Arena 3">
                         <div class="p-6">
                             <h3 class="font-anton text-2xl text-success mb-2 uppercase" data-i18n="arena.map3.title"></h3>
                             <p class="text-gray-200" data-i18n="arena.map3.desc"></p>
@@ -380,7 +415,7 @@
                 
                 <div class="grid md:grid-cols-2 gap-10">
                     <div class="card-cartoon md:col-span-2 flex flex-col md:flex-row items-center" data-aos="fade-right">
-                        <img src="https://via.placeholder.com/400x300/FFD700/000000?text=NOTICIA+DESTACADA" alt="News 1" class="w-full md:w-2/5 h-full object-cover border-b-4 md:border-b-0 md:border-r-4 border-black">
+                        <img src="/Multimedia/commingsoon.png" alt="News 1" class="w-full md:w-2/5 h-full object-cover border-b-4 md:border-b-0 md:border-r-4 border-black">
                         <div class="p-8">
                             <div class="badge badge-warning mb-2 font-bold" data-i18n="news.tag.update"></div>
                             <h3 class="font-anton text-3xl text-white mb-4 uppercase" data-i18n="news.art1.title"></h3>
@@ -389,7 +424,7 @@
                         </div>
                     </div>
                     <div class="card-cartoon flex flex-col md:flex-row items-center" data-aos="fade-up" data-aos-delay="100">
-                        <img src="https://via.placeholder.com/200x200/FF4500/FFFFFF?text=EVENTO" alt="News 2" class="w-full md:w-1/3 h-full object-cover border-b-4 md:border-b-0 md:border-r-4 border-black">
+                        <img src="/Multimedia/trophy.jpg" alt="News 2" class="w-full md:w-1/3 h-full object-cover border-b-4 md:border-b-0 md:border-r-4 border-black">
                         <div class="p-6">
                             <div class="badge badge-error mb-2 font-bold" data-i18n="news.tag.event"></div>
                             <h3 class="font-anton text-xl text-white mb-2 uppercase" data-i18n="news.art2.title"></h3>
@@ -397,7 +432,7 @@
                         </div>
                     </div>
                     <div class="card-cartoon flex flex-col md:flex-row items-center" data-aos="fade-up" data-aos-delay="200">
-                        <img src="https://via.placeholder.com/200x200/00C851/FFFFFF?text=COMUNIDAD" alt="News 3" class="w-full md:w-1/3 h-full object-cover border-b-4 md:border-b-0 md:border-r-4 border-black">
+                        <img src="/Multimedia/fanart.png" alt="News 3" class="w-full md:w-1/3 h-full object-cover border-b-4 md:border-b-0 md:border-r-4 border-black">
                         <div class="p-6">
                             <div class="badge badge-success mb-2 font-bold" data-i18n="news.tag.community"></div>
                             <h3 class="font-anton text-xl text-white mb-2 uppercase" data-i18n="news.art3.title"></h3>
@@ -410,7 +445,7 @@
 
         <footer class="footer footer-center p-10 bg-black text-base-content border-t-4 border-black font-sans">
             <aside>
-                <img src="teddylogo.png" alt="Logo" class="w-60 rounded-xl mb-4 border-2 border-black">
+                <img src="/Multimedia/teddylogo.png" alt="Logo" class="w-60 rounded-xl mb-4 border-2 border-black">
                 <p class="font-bold text-lg text-white font-anton tracking-wider uppercase">Teddy's All-Stars</p>
                 <p class="text-gray-400" data-i18n="footer.rights"></p>
             </aside>
@@ -418,7 +453,7 @@
     </div>
 
     <audio id="bg-music" loop>
-        <source src="Teddy Bear Waltz.mp3" type="audio/mpeg">
+        <source src="/Audio/Teddy Bear Waltz.mp3" type="audio/mpeg">
     </audio>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
