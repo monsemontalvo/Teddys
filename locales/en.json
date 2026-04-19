@@ -1,50 +1,119 @@
 {
-  "nav": { "pres": "Overview", "bears": "Bears", "arena": "Arena", "news": "News", "play": "PRE-REGISTER NOW" },
-  "hero": {
-      "title": "Collect Stars and Dominate the Arena!",
-      "subtitle": "The roughest and cutest multiplayer has arrived.",
-      "cta": "PRE-REGISTER NOW",
-      "cd_days": "Days",
-      "cd_hours": "Hours",
-      "cd_mins": "Min",
-      "cd_secs": "Sec"
-  },
-  "pres": {
-      "title": "What is Teddy's All-Stars?",
-      "feat1": { "title": "Unique Skills", "desc": "Every bear has a devastating superpower that turns the tide of battle." },
-      "feat2": { "title": "Full Customization", "desc": "Hundreds of skins, accessories, and balls to define your style." },
-      "feat3": { "title": "Multiplayer Chaos", "desc": "Intense competitive 3v3 matches against players worldwide." },
-      "videos": "GAMEPLAY & TRAILERS",
-      "gallery": "SCREENSHOTS"
-  },
-  "osos": {
-      "title": "MEET THE ALL-STARS",
-      "3d": "Load Animated 3D Model (.glb)",
-      "bear1": { "name": "Pancho", "country": "Country: Mexico" },
-      "bear2": { "name": "Sam", "country": "Country: USA" },
-      "bear3": { "name": "Kuma", "country": "Country: Japan" },
-      "bear4": { "name": "Maple", "country": "Country: Canada" },
-      "bear5": { "name": "Rio", "country": "Country: Brazil" },
-      "bear6": { "name": "Pierre", "country": "Country: France" },
-      "bear7": { "name": "Che", "country": "Country: Argentina" },
-      "bear8": { "name": "Toro", "country": "Country: Spain" },
-      "bear9": { "name": "Otto", "country": "Country: Germany" }
-  },
-  "arena": {
-      "title": "CRAZIEST ARENAS",
-      "map1": { "title": "Candy Factory", "desc": "Watch out for the sticky floor and giant lollipops." },
-      "map2": { "title": "Cyberpunk Rooftop", "desc": "Play in the heights among neon lights and giant fans." },
-      "map3": { "title": "Zero Gravity", "desc": "Space handball with portals and low gravity." }
-  },
-  "news": {
-      "title": "LATEST NEWS",
-      "readmore": "Read more",
-      "tag": { "update": "UPDATE", "event": "EVENT", "community": "COMMUNITY" },
-      "art1": { "title": "Patch 1.2: Summer Skins", "desc": "Get your bears ready for the beach with swimsuits. Available now!" },
-      "art2": { "title": "Community Tournament: Sign Up", "desc": "Prove who is the best All-Star. Exclusive prizes." },
-      "art3": { "title": "Fan Art of the Month: Winners", "desc": "Check out the most incredible drawings by our players." }
-  },
-  "footer": {
-      "rights": "© 2026 - All rights reserved."
-  }
+    "nav": {
+        "pres": "Overview",
+        "bears": "Bears",
+        "arena": "Arena",
+        "news": "News",
+        "play": "PRE-REGISTER NOW"
+    },
+    "hero": {
+        "title": "Collect Stars and Dominate the Arena!",
+        "subtitle": "The toughest and most adorable multiplayer is here.",
+        "cta": "PRE-REGISTER NOW",
+        "cd_days": "Days",
+        "cd_hours": "Hours",
+        "cd_mins": "Mins",
+        "cd_secs": "Secs"
+    },
+    "pres": {
+        "title": "What is Teddy's All-Stars?",
+        "feat1": {
+            "title": "Elemental Arsenal",
+            "desc": "Dominate the field with ice balls to freeze your rivals or the deadly fire ball to eliminate them."
+        },
+        "feat2": {
+            "title": "Global Style",
+            "desc": "Customize your bear with accessories from different countries to represent your pride in the arena."
+        },
+        "feat3": {
+            "title": "4-Player Chaos",
+            "desc": "Compete in intense free-for-all matches: collect 5 stars and become the last bear standing."
+        },
+        "videos": "GAMEPLAY & TRAILERS",
+        "gallery": "THE WORLD OF TEDDY'S ALL-STARS"
+    },
+    "osos": {
+        "title": "MEET THE ALL-STARS",
+        "3d": "Load Animated 3D Model (.glb)",
+        "bear1": {
+            "name": "Pancho",
+            "country": "Country: Mexico"
+        },
+        "bear2": {
+            "name": "Sam",
+            "country": "Country: United States"
+        },
+        "bear3": {
+            "name": "Kuma",
+            "country": "Country: Japan"
+        },
+        "bear4": {
+            "name": "Maple",
+            "country": "Country: Canada"
+        },
+        "bear5": {
+            "name": "Rio",
+            "country": "Country: Brazil"
+        },
+        "bear6": {
+            "name": "Pierre",
+            "country": "Country: France"
+        },
+        "bear7": {
+            "name": "Che",
+            "country": "Country: Argentina"
+        },
+        "bear8": {
+            "name": "Toro",
+            "country": "Country: Spain"
+        },
+        "bear9": {
+            "name": "Otto",
+            "country": "Country: Germany"
+        }
+    },
+    "arena": {
+        "title": "THE BATTLEFIELD",
+        "map1": {
+            "title": "Natural Obstacles",
+            "desc": "Use rocks and the river to take cover from enemy attacks."
+        },
+        "map2": {
+            "title": "Base Zones",
+            "desc": "Each corner of the terrain features a customized base for you."
+        },
+        "map3": {
+            "title": "Stylized Aesthetics",
+            "desc": "Vibrant graphics that combine the tranquility of the countryside with the chaos of battle."
+        }
+    },
+    "news": {
+        "title": "LATEST NEWS",
+        "readmore": "Read more",
+        "tag": {
+            "update": "UPDATE",
+            "event": "EVENT",
+            "community": "COMMUNITY"
+        },
+        "art1": {
+            "title": "Patch 1.2: Summer Skins",
+            "desc": "Get your bears ready for the beach with swimsuits. Coming soon!"
+        },
+        "art2": {
+            "title": "Community Tournament: Register Now",
+            "desc": "Show who is the best All-Star. Exclusive prizes."
+        },
+        "art3": {
+            "title": "Fan Art of the Month: Winners",
+            "desc": "Check out the most amazing drawings made by our players."
+        }
+    },
+    "modal": {
+        "title": "Coming Soon!",
+        "desc": "We are preparing the arena. Leave your email to be notified upon launch.",
+        "close": "Close"
+    },
+    "footer": {
+        "rights": "© 2026 - All rights reserved."
+    }
 }

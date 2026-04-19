@@ -1,50 +1,119 @@
 {
-  "nav": { "pres": "Présentation", "bears": "Ours", "arena": "Arène", "news": "Actualités", "play": "PRÉ-INSCRIVEZ-VOUS" },
-  "hero": {
-      "title": "Collectionnez des Étoiles et Dominez l'Arène !",
-      "subtitle": "Le multijoueur le plus rude et adorable est arrivé.",
-      "cta": "PRÉ-INSCRIVEZ-VOUS",
-      "cd_days": "Jours",
-      "cd_hours": "Heures",
-      "cd_mins": "Min",
-      "cd_secs": "Sec"
-  },
-  "pres": {
-      "title": "Qu'est-ce que Teddy's All-Stars ?",
-      "feat1": { "title": "Compétences Uniques", "desc": "Chaque ours possède un superpouvoir dévastateur qui change le cours de la bataille." },
-      "feat2": { "title": "Personnalisation Totale", "desc": "Des centaines de skins, d'accessoires et de ballons pour définir votre style." },
-      "feat3": { "title": "Chaos Multijoueur", "desc": "Des matchs compétitifs intenses en 3c3 contre des joueurs du monde entier." },
-      "videos": "GAMEPLAY ET BANDES-ANNONCES",
-      "gallery": "CAPTURES D'ÉCRAN"
-  },
-  "osos": {
-      "title": "RENCONTREZ LES ALL-STARS",
-      "3d": "Charger le modèle 3D animé (.glb)",
-      "bear1": { "name": "Pancho", "country": "Pays: Mexique" },
-      "bear2": { "name": "Sam", "country": "Pays: USA" },
-      "bear3": { "name": "Kuma", "country": "Pays: Japon" },
-      "bear4": { "name": "Maple", "country": "Pays: Canada" },
-      "bear5": { "name": "Rio", "country": "Pays: Brésil" },
-      "bear6": { "name": "Pierre", "country": "Pays: France" },
-      "bear7": { "name": "Che", "country": "Pays: Argentine" },
-      "bear8": { "name": "Toro", "country": "Pays: Espagne" },
-      "bear9": { "name": "Otto", "country": "Pays: Allemagne" }
-  },
-  "arena": {
-      "title": "LES ARÈNES LES PLUS FOLLES",
-      "map1": { "title": "Usine de Bonbons", "desc": "Attention au sol collant et aux sucettes géantes." },
-      "map2": { "title": "Toit Cyberpunk", "desc": "Jouez en hauteur parmi les lumières néon et les ventilateurs géants." },
-      "map3": { "title": "Gravité Zéro", "desc": "Handball spatial avec des portails et une faible gravité." }
-  },
-  "news": {
-      "title": "DERNIÈRES NOUVELLES",
-      "readmore": "Lire la suite",
-      "tag": { "update": "MISE À JOUR", "event": "ÉVÉNEMENT", "community": "COMMUNAUTÉ" },
-      "art1": { "title": "Patch 1.2: Skins d'Été", "desc": "Préparez vos ours pour la plage avec des maillots de bain. Disponible maintenant !" },
-      "art2": { "title": "Tournoi Communautaire : Inscrivez-vous", "desc": "Prouvez qui est le meilleur All-Star. Prix exclusifs." },
-      "art3": { "title": "Fan Art du Mois : Gagnants", "desc": "Découvrez les dessins incroyables réalisés par nos joueurs." }
-  },
-  "footer": {
-      "rights": "© 2026 - Tous droits réservés."
-  }
+    "nav": {
+        "pres": "Présentation",
+        "bears": "Ours",
+        "arena": "Arène",
+        "news": "Actualités",
+        "play": "PRÉINSCRIVEZ-VOUS"
+    },
+    "hero": {
+        "title": "Collectionnez les Étoiles et Dominez l'Arène !",
+        "subtitle": "Le multijoueur le plus coriace et le plus adorable est arrivé.",
+        "cta": "PRÉINSCRIVEZ-VOUS",
+        "cd_days": "Jours",
+        "cd_hours": "Heures",
+        "cd_mins": "Min",
+        "cd_secs": "Sec"
+    },
+    "pres": {
+        "title": "Qu'est-ce que Teddy's All-Stars ?",
+        "feat1": {
+            "title": "Arsenal Élémentaire",
+            "desc": "Dominez le terrain avec des ballons de glace pour geler vos rivaux ou le ballon de feu mortel pour les éliminer."
+        },
+        "feat2": {
+            "title": "Style Mondial",
+            "desc": "Personnalisez votre ours avec des accessoires de différents pays pour représenter votre fierté dans l'arène."
+        },
+        "feat3": {
+            "title": "Chaos à 4 Joueurs",
+            "desc": "Participez à des matchs intenses chacun pour soi : rassemblez 5 étoiles et devenez le dernier ours debout."
+        },
+        "videos": "GAMEPLAY & BANDES-ANNONCES",
+        "gallery": "LE MONDE DE TEDDY'S ALL-STARS"
+    },
+    "osos": {
+        "title": "RENCONTREZ LES ALL-STARS",
+        "3d": "Charger le modèle 3D animé (.glb)",
+        "bear1": {
+            "name": "Pancho",
+            "country": "Pays : Mexique"
+        },
+        "bear2": {
+            "name": "Sam",
+            "country": "Pays : États-Unis"
+        },
+        "bear3": {
+            "name": "Kuma",
+            "country": "Pays : Japon"
+        },
+        "bear4": {
+            "name": "Maple",
+            "country": "Pays : Canada"
+        },
+        "bear5": {
+            "name": "Rio",
+            "country": "Pays : Brésil"
+        },
+        "bear6": {
+            "name": "Pierre",
+            "country": "Pays : France"
+        },
+        "bear7": {
+            "name": "Che",
+            "country": "Pays : Argentine"
+        },
+        "bear8": {
+            "name": "Toro",
+            "country": "Pays : Espagne"
+        },
+        "bear9": {
+            "name": "Otto",
+            "country": "Pays : Allemagne"
+        }
+    },
+    "arena": {
+        "title": "LE CHAMP DE BATAILLE",
+        "map1": {
+            "title": "Obstacles Naturels",
+            "desc": "Utilisez les rochers et la rivière pour vous mettre à l'abri des attaques ennemies."
+        },
+        "map2": {
+            "title": "Zones de Base",
+            "desc": "Chaque coin du terrain dispose d'une base personnalisée pour vous."
+        },
+        "map3": {
+            "title": "Esthétique Stylisée",
+            "desc": "Des graphismes vibrants qui allient la tranquillité de la campagne au chaos de la bataille."
+        }
+    },
+    "news": {
+        "title": "DERNIÈRES NOUVELLES",
+        "readmore": "Lire la suite",
+        "tag": {
+            "update": "MISE À JOUR",
+            "event": "ÉVÉNEMENT",
+            "community": "COMMUNAUTÉ"
+        },
+        "art1": {
+            "title": "Patch 1.2 : Skins d'Été",
+            "desc": "Préparez vos ours pour la plage avec des maillots de bain. Bientôt disponible !"
+        },
+        "art2": {
+            "title": "Tournoi Communautaire : Inscrivez-vous",
+            "desc": "Montrez qui est le meilleur All-Star. Des prix exclusifs."
+        },
+        "art3": {
+            "title": "Fan Art du Mois : Gagnants",
+            "desc": "Découvrez les dessins les plus incroyables réalisés par nos joueurs."
+        }
+    },
+    "modal": {
+        "title": "Bientôt disponible !",
+        "desc": "Nous préparons l'arène. Laissez votre e-mail pour être informé du lancement.",
+        "close": "Fermer"
+    },
+    "footer": {
+        "rights": "© 2026 - Tous droits réservés."
+    }
 }

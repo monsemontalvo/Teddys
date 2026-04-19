@@ -108,6 +108,11 @@
             "desc": "Mira los dibujos más increíbles hechos por nuestros jugadores."
         }
     },
+    "modal": {
+        "title": "¡Próximamente!",
+        "desc": "Estamos preparando la arena. Déjanos tu correo para avisarte del lanzamiento.",
+        "close": "Cerrar"
+    },
     "footer": {
         "rights": "© 2026 - Todos los derechos reservados."
     }

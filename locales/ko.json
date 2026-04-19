@@ -1,50 +1,119 @@
 {
-  "nav": { "pres": "개요", "bears": "곰들", "arena": "아레나", "news": "뉴스", "play": "사전 등록" },
-  "hero": {
-      "title": "별을 모아 아레나를 지배하세요!",
-      "subtitle": "가장 거칠고 귀여운 멀티플레이어가 도착했습니다.",
-      "cta": "지금 사전 등록",
-      "cd_days": "일",
-      "cd_hours": "시간",
-      "cd_mins": "분",
-      "cd_secs": "초"
-  },
-  "pres": {
-      "title": "Teddy's All-Stars 란 무엇인가요?",
-      "feat1": { "title": "고유한 기술", "desc": "각 곰은 전투의 흐름을 바꾸는 파괴적인 슈퍼 파워를 가지고 있습니다." },
-      "feat2": { "title": "완벽한 커스터마이징", "desc": "수백 가지의 스킨, 액세서리, 공으로 자신만의 스타일을 정의하세요." },
-      "feat3": { "title": "멀티플레이어 혼돈", "desc": "전 세계 플레이어와의 강렬한 3대3 경쟁 매치." },
-      "videos": "게임 플레이 및 트레일러",
-      "gallery": "스크린샷"
-  },
-  "osos": {
-      "title": "올스타 만나기",
-      "3d": "애니메이션 3D 모델 불러오기 (.glb)",
-      "bear1": { "name": "Pancho", "country": "국가: 멕시코" },
-      "bear2": { "name": "Sam", "country": "국가: 미국" },
-      "bear3": { "name": "Kuma", "country": "국가: 일본" },
-      "bear4": { "name": "Maple", "country": "국가: 캐나다" },
-      "bear5": { "name": "Rio", "country": "국가: 브라질" },
-      "bear6": { "name": "Pierre", "country": "국가: 프랑스" },
-      "bear7": { "name": "Che", "country": "국가: 아르헨티나" },
-      "bear8": { "name": "Toro", "country": "국가: 스페인" },
-      "bear9": { "name": "Otto", "country": "국가: 독일" }
-  },
-  "arena": {
-      "title": "가장 미친 아레나",
-      "map1": { "title": "사탕 공장", "desc": "끈적끈적한 바닥과 거대한 막대 사탕을 조심하세요." },
-      "map2": { "title": "사이버펑크 옥상", "desc": "네온 불빛과 거대한 선풍기 사이 높은 곳에서 플레이하세요." },
-      "map3": { "title": "무중력", "desc": "포털과 낮은 중력이 있는 우주 핸드볼." }
-  },
-  "news": {
-      "title": "최신 뉴스",
-      "readmore": "더 읽어보기",
-      "tag": { "update": "업데이트", "event": "이벤트", "community": "커뮤니티" },
-      "art1": { "title": "패치 1.2: 여름 스킨", "desc": "수영복으로 해변에 갈 곰을 준비하세요. 지금 이용 가능!" },
-      "art2": { "title": "커뮤니티 토너먼트: 등록", "desc": "누가 최고의 올스타인지 증명하세요. 독점 상품." },
-      "art3": { "title": "이달의 팬 아트: 우승자", "desc": "우리 플레이어들이 그린 놀라운 그림을 확인하세요." }
-  },
-  "footer": {
-      "rights": "© 2026 - 모든 권리 보유."
-  }
+    "nav": {
+        "pres": "게임 소개",
+        "bears": "베어",
+        "arena": "아레나",
+        "news": "뉴스",
+        "play": "지금 사전 등록하세요"
+    },
+    "hero": {
+        "title": "별을 모으고 아레나를 지배하세요!",
+        "subtitle": "가장 터프하고 귀여운 멀티플레이어 게임이 왔습니다.",
+        "cta": "지금 사전 등록하세요",
+        "cd_days": "일",
+        "cd_hours": "시간",
+        "cd_mins": "분",
+        "cd_secs": "초"
+    },
+    "pres": {
+        "title": "Teddy's All-Stars 란 무엇인가요?",
+        "feat1": {
+            "title": "원소 무기",
+            "desc": "얼음 공으로 라이벌을 얼리거나 치명적인 불 공으로 제압하여 필드를 지배하세요."
+        },
+        "feat2": {
+            "title": "글로벌 스타일",
+            "desc": "다양한 국가의 액세서리로 베어를 꾸미고 아레나에서 당신의 자부심을 보여주세요."
+        },
+        "feat3": {
+            "title": "4인 카오스 매치",
+            "desc": "치열한 개인전에서 경쟁하세요. 별 5개를 모으고 최후의 생존 베어가 되세요."
+        },
+        "videos": "게임플레이 및 트레일러",
+        "gallery": "TEDDY'S ALL-STARS의 세계"
+    },
+    "osos": {
+        "title": "ALL-STARS를 만나보세요",
+        "3d": "애니메이션 3D 모델 로드 (.glb)",
+        "bear1": {
+            "name": "Pancho",
+            "country": "국가: 멕시코"
+        },
+        "bear2": {
+            "name": "Sam",
+            "country": "국가: 미국"
+        },
+        "bear3": {
+            "name": "Kuma",
+            "country": "국가: 일본"
+        },
+        "bear4": {
+            "name": "Maple",
+            "country": "국가: 캐나다"
+        },
+        "bear5": {
+            "name": "Rio",
+            "country": "국가: 브라질"
+        },
+        "bear6": {
+            "name": "Pierre",
+            "country": "국가: 프랑스"
+        },
+        "bear7": {
+            "name": "Che",
+            "country": "국가: 아르헨티나"
+        },
+        "bear8": {
+            "name": "Toro",
+            "country": "국가: 스페인"
+        },
+        "bear9": {
+            "name": "Otto",
+            "country": "국가: 독일"
+        }
+    },
+    "arena": {
+        "title": "전장",
+        "map1": {
+            "title": "자연 장애물",
+            "desc": "바위와 강을 이용하여 적의 공격을 피하세요."
+        },
+        "map2": {
+            "title": "베이스 존",
+            "desc": "지형의 각 모서리에는 당신을 위한 맞춤형 기지가 있습니다."
+        },
+        "map3": {
+            "title": "스타일리시한 미학",
+            "desc": "시골의 평온함과 전투의 혼란이 어우러진 생동감 넘치는 그래픽."
+        }
+    },
+    "news": {
+        "title": "최신 뉴스",
+        "readmore": "더 읽기",
+        "tag": {
+            "update": "업데이트",
+            "event": "이벤트",
+            "community": "커뮤니티"
+        },
+        "art1": {
+            "title": "패치 1.2: 여름 스킨",
+            "desc": "수영복을 입고 베어들과 해변으로 떠날 준비를 하세요. 곧 출시됩니다!"
+        },
+        "art2": {
+            "title": "커뮤니티 토너먼트: 지금 등록하세요",
+            "desc": "누가 최고의 All-Star인지 증명하세요. 특별한 보상이 기다립니다."
+        },
+        "art3": {
+            "title": "이달의 팬아트: 우승자",
+            "desc": "플레이어들이 그린 멋진 작품들을 감상하세요."
+        }
+    },
+    "modal": {
+        "title": "출시 예정!",
+        "desc": "아레나를 준비 중입니다. 이메일을 남겨주시면 출시 시 알려드립니다.",
+        "close": "닫기"
+    },
+    "footer": {
+        "rights": "© 2026 - 모든 권리 보유."
+    }
 }
