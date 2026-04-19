@@ -47,10 +47,11 @@
     <div id="main-content" class="hidden opacity-0 transition-opacity duration-1000">
 
         <header class="fixed top-0 left-0 w-full z-[900] bg-black/80 backdrop-blur-md border-b-4 border-black">
-            <div class="navbar max-w-7xl mx-auto">
-                <div class="navbar-start">
+            <div class="navbar max-w-7xl mx-auto px-1 sm:px-4">
+                
+                <div class="navbar-start w-auto flex-1">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-yellow-400">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden px-2 text-yellow-400">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -66,7 +67,7 @@
                         </ul>
                     </div>
                     <a href="#hero"
-                        class="btn btn-ghost text-2xl font-black italic tracking-tighter uppercase text-yellow-400 font-anton shadow-black drop-shadow-md">
+                        class="btn btn-ghost px-1 sm:px-4 text-base md:text-2xl font-black italic tracking-tighter uppercase text-yellow-400 font-anton shadow-black drop-shadow-md">
                         TEDDY'S ALL-STARS
                     </a>
                 </div>
@@ -82,10 +83,10 @@
                     </ul>
                 </div>
 
-                <div class="navbar-end gap-2">
+                <div class="navbar-end w-auto flex-none gap-0 sm:gap-2">
                     <div class="dropdown dropdown-end">
-                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle text-yellow-400">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle btn-sm sm:btn-md text-yellow-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2 2 2 0 012 2v.65M16 4.354V5a2 2 0 002 2h2m-1.6 14c2.863-3.003 3.9-7.85 1.577-12.188M14.5 3C19.552 8.163 19.552 15.837 14.5 21m-9-18C.448 8.163.448 15.837 5.5 21" />
@@ -102,21 +103,21 @@
                     </div>
 
                     <button id="music-toggle"
-                        class="btn btn-ghost btn-circle text-yellow-400 hover:scale-110 transition-transform">
+                        class="btn btn-ghost btn-circle btn-sm sm:btn-md text-yellow-400 hover:scale-110 transition-transform">
                         <svg id="icon-music-off" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor" class="h-6 w-6">
+                            stroke-width="2" stroke="currentColor" class="h-5 w-5 sm:h-6 sm:w-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.25 9.75 19.5 12m0 0 2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6 4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
                         </svg>
                         <svg id="icon-music-on" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor" class="h-6 w-6 hidden">
+                            stroke-width="2" stroke="currentColor" class="h-5 w-5 sm:h-6 sm:w-6 hidden">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
                         </svg>
                     </button>
 
                     <button onclick="modal_registro.showModal()"
-                        class="btn btn-warning btn-sm border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-y-1 hover:shadow-none transition-all font-black uppercase text-black">
+                        class="btn btn-warning btn-xs sm:btn-sm border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-y-1 hover:shadow-none transition-all font-black uppercase text-black">
                         <span data-i18n="nav.play"></span>
                     </button>
                 </div>
