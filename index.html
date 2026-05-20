@@ -33,14 +33,16 @@
 
 <body class="bg-black text-white m-0 p-0 overflow-x-hidden">
 
-<div id="loading-screen" class="fixed inset-0 bg-black flex justify-center items-center z-[1000] transition-opacity duration-1000">
+    <div id="loading-screen"
+        class="fixed inset-0 bg-black flex justify-center items-center z-[1000] transition-opacity duration-1000">
         <div class="loader-content flex flex-col items-center gap-8 w-full px-4">
-            
+
             <div class="dots-loader w-64 md:w-96 flex flex-col items-center gap-4">
                 <progress class="progress progress-warning w-full"></progress>
             </div>
 
-            <img id="loading-logo" src="/Multimedia/teddylogo.png" alt="Logo" class="hidden w-144 sm:w-192 md:max-w-[900px] opacity-0 transition-opacity duration-1000 rounded-2xl shadow-2xl">
+            <img id="loading-logo" src="/Multimedia/teddylogo.png" alt="Logo"
+                class="hidden w-144 sm:w-192 md:max-w-[900px] opacity-0 transition-opacity duration-1000 rounded-2xl shadow-2xl">
         </div>
     </div>
 
@@ -48,7 +50,7 @@
 
         <header class="fixed top-0 left-0 w-full z-[900] bg-black/80 backdrop-blur-md border-b-4 border-black">
             <div class="navbar max-w-7xl mx-auto px-1 sm:px-4">
-                
+
                 <div class="navbar-start w-auto flex-1">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden px-2 text-yellow-400">
@@ -85,9 +87,10 @@
 
                 <div class="navbar-end w-auto flex-none gap-0 sm:gap-2">
                     <div class="dropdown dropdown-end">
-                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle btn-sm sm:btn-md text-yellow-400">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                        <div tabindex="0" role="button"
+                            class="btn btn-ghost btn-circle btn-sm sm:btn-md text-yellow-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2 2 2 0 012 2v.65M16 4.354V5a2 2 0 002 2h2m-1.6 14c2.863-3.003 3.9-7.85 1.577-12.188M14.5 3C19.552 8.163 19.552 15.837 14.5 21m-9-18C.448 8.163.448 15.837 5.5 21" />
                             </svg>
@@ -219,57 +222,36 @@
                 <h3 class="section-subtitle text-center mb-10" data-aos="fade-up" data-i18n="pres.videos"></h3>
                 <div class="carousel w-full rounded-2xl border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-20"
                     data-aos="zoom-in">
-                    <div id="vid1" class="carousel-item relative w-full h-[300px] md:h-[500px]">
-                        <div class="video-placeholder group w-full h-full border-none shadow-none rounded-none">
-                            <img src="https://via.placeholder.com/1200x500/000000/FFFFFF?text=TRAILER+OFICIAL"
-                                class="w-full h-full object-cover">
-                            <div class="play-icon">▶</div>
+                    <div id="vid1" class="carousel-item relative w-full aspect-video max-h-[80vh]">
+                        <div
+                            class="video-placeholder group w-full h-full border-none shadow-none rounded-none bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/b61lYqoX9Kw"
+                                title="Reproductor de video de YouTube" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div
                             class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
-                            <button onclick="scrollCarousel('vid4')"
+                            <button onclick="scrollCarousel('vid2')"
                                 class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❮</button>
                             <button onclick="scrollCarousel('vid2')"
                                 class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❯</button>
                         </div>
                     </div>
-                    <div id="vid2" class="carousel-item relative w-full h-[300px] md:h-[500px]">
-                        <div class="video-placeholder group w-full h-full border-none shadow-none rounded-none">
-                            <img src="https://via.placeholder.com/1200x500/000000/FFFFFF?text=GAMEPLAY"
-                                class="w-full h-full object-cover">
-                            <div class="play-icon">▶</div>
+
+                    <div id="vid2" class="carousel-item relative w-full aspect-video max-h-[80vh]">
+                        <div
+                            class="video-placeholder group w-full h-full border-none shadow-none rounded-none bg-black">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/078o1UfmD9g"
+                                title="Reproductor de video de YouTube" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div
                             class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
                             <button onclick="scrollCarousel('vid1')"
-                                class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❮</button>
-                            <button onclick="scrollCarousel('vid3')"
-                                class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❯</button>
-                        </div>
-                    </div>
-                    <div id="vid3" class="carousel-item relative w-full h-[300px] md:h-[500px]">
-                        <div class="video-placeholder group w-full h-full border-none shadow-none rounded-none">
-                            <img src="https://via.placeholder.com/1200x500/000000/FFFFFF?text=OSOS+HABILIDADES"
-                                class="w-full h-full object-cover">
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div
-                            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
-                            <button onclick="scrollCarousel('vid2')"
-                                class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❮</button>
-                            <button onclick="scrollCarousel('vid4')"
-                                class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❯</button>
-                        </div>
-                    </div>
-                    <div id="vid4" class="carousel-item relative w-full h-[300px] md:h-[500px]">
-                        <div class="video-placeholder group w-full h-full border-none shadow-none rounded-none">
-                            <img src="https://via.placeholder.com/1200x500/000000/FFFFFF?text=MEJORES+JUGADAS"
-                                class="w-full h-full object-cover">
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div
-                            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
-                            <button onclick="scrollCarousel('vid3')"
                                 class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❮</button>
                             <button onclick="scrollCarousel('vid1')"
                                 class="btn btn-circle btn-warning border-2 border-black hover:scale-105">❯</button>
